@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.example.com/football"
+    xmlns="http://www.example.com/football"
+    elementFormDefault="qualified">
+
+    <xs:element name="catalogue">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="teams" type="teamsType" />
+                <xs:element name="competitions" type="competitionsType" />
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="competitionType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string" />
+            <xs:element name="country" type="nationalityType" />
+            <xs:element name="logo" type="imageType" minOccurs="0" />
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required" />
+    </xs:complexType>
+    
+    <xs:complexType name="competitionsType">
+        <xs:sequence>
+            <xs:element name="competition" type="competitionType" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="teamType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string" />
+            <xs:element name="country" type="nationalityType" />
+            <xs:element name="city" type="xs:string" />
+            <xs:element name="stadium" type="xs:string" />
+            <xs:element name="founded" type="yearType" />
+            <xs:element name="players" type="playersType" />
+            <xs:element name="coach" type="coachType" />
+            <xs:element name="logo" type="imageType" minOccurs="0" />
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required" />
+        <xs:attribute name="competitions" type="xs:IDREFS" use="required" />
+    </xs:complexType>
+
+    <xs:complexType name="teamsType">
+        <xs:sequence>
+            <xs:element name="team" type="teamType" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="playerType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string" />
+            <xs:element name="age" type="ageType" />
+            <xs:element name="nationality" type="nationalityType" />
+            <xs:element name="positions" type="positionsType" />
+            <xs:element name="stats" type="statsType" minOccurs="0" />
+            <xs:element name="image" type="imageType" minOccurs="0" />
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required" />
+        <xs:attribute name="team" type="xs:IDREF" use="required" />
+    </xs:complexType>
+
+    <xs:complexType name="playersType">
+        <xs:sequence>
+            <xs:element name="player" type="playerType" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="positionType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="GK" />
+            <xs:enumeration value="LB" />
+            <xs:enumeration value="CB" />
+            <xs:enumeration value="RB" />
+            <xs:enumeration value="LWB" />
+            <xs:enumeration value="RWB" />
+            <xs:enumeration value="CDM" />
+            <xs:enumeration value="CM" />
+            <xs:enumeration value="CAM" />
+            <xs:enumeration value="LM" />
+            <xs:enumeration value="RM" />
+            <xs:enumeration value="LW" />
+            <xs:enumeration value="CF" />
+            <xs:enumeration value="ST" />
+            <xs:enumeration value="RW" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="positionsType">
+        <xs:sequence>
+            <xs:element name="position" type="positionType" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="statsType">
+        <xs:sequence>
+            <xs:element name="matchesPlayed" type="xs:nonNegativeInteger" />
+            <xs:element name="goals" type="xs:nonNegativeInteger" minOccurs="0" />
+            <xs:element name="assists" type="xs:nonNegativeInteger" minOccurs="0" />
+            <xs:element name="yellowCards" type="xs:nonNegativeInteger" minOccurs="0" />
+            <xs:element name="redCards" type="xs:nonNegativeInteger" minOccurs="0" />
+            <xs:element name="cleanSheets" type="xs:nonNegativeInteger" minOccurs="0" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="coachType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string" />
+            <xs:element name="age" type="ageType" />
+            <xs:element name="nationality" type="nationalityType" />
+            <xs:element name="image" type="imageType" minOccurs="0" />
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required" />
+        <xs:attribute name="team" type="xs:IDREF" use="required" />
+    </xs:complexType>
+
+    <xs:simpleType name="predefinedNationalityType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="England" />
+            <xs:enumeration value="France" />
+            <xs:enumeration value="Italy" />
+            <xs:enumeration value="Germany" />
+            <xs:enumeration value="Portugal" />
+            <xs:enumeration value="Spain" />
+            <xs:enumeration value="Argentina" />
+            <xs:enumeration value="Brazil" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="nationalityType" >
+        <xs:union memberTypes="predefinedNationalityType xs:string" />
+    </xs:simpleType>
+
+    <xs:complexType name="imageType">
+        <xs:attribute name="src" type="xs:anyURI" use="required" />
+    </xs:complexType>
+
+    <xs:simpleType name="yearType">
+        <xs:restriction base="xs:nonNegativeInteger">
+            <xs:maxInclusive value="2024" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="ageType">
+        <xs:restriction base="xs:nonNegativeInteger">
+            <xs:minInclusive value="15" />
+            <xs:maxInclusive value="90" />
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
