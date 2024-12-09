@@ -11,6 +11,31 @@
                 <xs:element name="competitions" type="competitionsType" />
             </xs:all>
         </xs:complexType>
+
+        <xs:key name="teamIDKey">
+            <xs:selector xpath="teams/team" />
+            <xs:field xpath="@id" />
+        </xs:key>
+
+        <xs:keyref name="playerTeamRef" refer="teamIDKey">
+            <xs:selector xpath="teams/team/players/player" />
+            <xs:field xpath="@team" />
+        </xs:keyref>
+
+        <xs:keyref name="coachTeamRef" refer="teamIDKey">
+            <xs:selector xpath="teams/team/coach" />
+            <xs:field xpath="@team" />
+        </xs:keyref>
+
+        <xs:key name="competitionIDKey">
+            <xs:selector xpath="competitions/competition" />
+            <xs:field xpath="@id" />
+        </xs:key>
+        
+        <xs:keyref name="teamCompetitionRef" refer="competitionIDKey">
+            <xs:selector xpath="teams/team" />
+            <xs:field xpath="@competitions" />
+        </xs:keyref>
     </xs:element>
 
     <xs:complexType name="competitionType">
