@@ -41,11 +41,12 @@
       <competition id="comp1">
          <name>La Liga</name>
          <country>Spain</country>
-         <logo src="http://example.com/images/laliga-logo.png" />
+          <logo src="https://w1.pngwing.com/pngs/1009/29/png-transparent-barcelona-logo-spain-woolshed-baa-grill-football-fc-barcelona-sports-la-liga-line-thumbnail.png" />
       </competition>
       <competition id="comp2">
          <name>UEFA Champions League</name>
          <country>Europe</country>
+          <logo src="https://w1.pngwing.com/pngs/1009/29/png-transparent-barcelona-logo-spain-woolshed-baa-grill-football-fc-barcelona-sports-la-liga-line-thumbnail.png" />
       </competition>
    </competitions>
 </catalogue>
