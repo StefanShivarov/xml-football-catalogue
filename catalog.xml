@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="catalog.xsl"?>
+<catalogue xmlns="http://www.example.com/football" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.com/football schema.xsd">
+   <teams>
+      <team id="team1" competitions="comp1 comp2">
+         <name>Real Madrid</name>
+         <country>Spain</country>
+         <city>Madrid</city>
+         <stadium>Santiago Bernabeu</stadium>
+         <founded>1902</founded>
+         <players>
+            <player id="player1" team="team1">
+               <name>Karim Benzema</name>
+               <age>35</age>
+               <nationality>France</nationality>
+               <positions>
+                  <position>ST</position>
+                  <position>CF</position>
+               </positions>
+               <stats>
+                  <matchesPlayed>500</matchesPlayed>
+                  <goals>300</goals>
+                  <assists>150</assists>
+                  <yellowCards>20</yellowCards>
+                  <redCards>1</redCards>
+                  <cleanSheets>0</cleanSheets>
+               </stats>
+               <image src="https://media.cnn.com/api/v1/images/stellar/prod/221017111358-01-karim-benzema.jpg?c=original" />
+            </player>
+         </players>
+         <coach id="coach1" team="team1">
+            <name>Carlo Ancelotti</name>
+            <age>64</age>
+            <nationality>Italy</nationality>
+            <image src="https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg)/origin-imgresizer.eurosport.com/2024/08/06/image-eb9a7b1e-0b2b-4c2e-a75b-d8adb4d25cb2-85-2560-1440.jpeg" />
+         </coach>
+         <logo src="https://images5.alphacoders.com/770/770521.jpg" />
+      </team>
+   </teams>
+   <competitions>
+      <competition id="comp1">
+         <name>La Liga</name>
+         <country>Spain</country>
+         <logo src="http://example.com/images/laliga-logo.png" />
+      </competition>
+      <competition id="comp2">
+         <name>UEFA Champions League</name>
+         <country>Europe</country>
+      </competition>
+   </competitions>
+</catalogue>
