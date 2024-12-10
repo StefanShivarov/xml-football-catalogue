@@ -68,10 +68,7 @@
          <div class="mb-4">
             <h3 class="text-lg font-semibold text-blue-400 mb-2">Competitions</h3>
             <div class="flex flex-wrap gap-3">
-               <xsl:variable name="competitions" select="@competitions" />
-               <xsl:call-template name="process-competitions">
-                  <xsl:with-param name="remaining" select="$competitions" />
-               </xsl:call-template>
+               <xsl:apply-templates select="fb:competitions/fb:competition" />
             </div>
          </div>
 
@@ -84,36 +81,27 @@
       </div>
    </xsl:template>
 
-   <xsl:template name="process-competitions">
-      <xsl:param name="remaining" />
-      <xsl:if test="$remaining">
-         <xsl:variable name="first" select="substring-before(concat($remaining, ' '), ' ')" />
-         <xsl:variable name="rest" select="substring-after($remaining, ' ')" />
-         <xsl:variable name="competition" select="/fb:catalogue/fb:competitions/fb:competition[@id=$first]" />
-         
-         <div class="flex items-center gap-2 bg-gray-700 px-3 py-2 rounded-lg shadow-sm">
-            <img class="w-8 h-8 rounded-full border-2 border-blue-500 object-cover" alt="Competition Logo">
-               <xsl:attribute name="src">
-                  <xsl:choose>
-                     <xsl:when test="$competition/fb:logo/@src">
-                        <xsl:value-of select="$competition/fb:logo/@src" />
-                     </xsl:when>
-                     <xsl:otherwise>
-                        https://static-00.iconduck.com/assets.00/404-page-not-found-illustration-1024x499-muqmchqg.png
-                     </xsl:otherwise>
-                  </xsl:choose>
-               </xsl:attribute>
-            </img>
-            <div>
-               <p class="text-sm font-medium text-white"><xsl:value-of select="$competition/fb:name" /></p>
-               <p class="text-xs text-gray-400"><xsl:value-of select="$competition/fb:country" /></p>
-            </div>
+   <xsl:template match="fb:competition">
+      <xsl:variable name="competitionID" select="@ref" />
+      <xsl:variable name="competition" select="/fb:catalogue/fb:competitions/fb:competition[@id=$competitionID]" />
+      <div class="flex items-center gap-2 bg-gray-700 px-3 py-2 rounded-lg shadow-sm">
+         <img class="w-8 h-8 rounded-full border-2 border-blue-500 object-cover" alt="Competition Logo">
+            <xsl:attribute name="src">
+               <xsl:choose>
+                  <xsl:when test="$competition/fb:logo/@src">
+                     <xsl:value-of select="$competition/fb:logo/@src" />
+                  </xsl:when>
+                  <xsl:otherwise>
+                     https://static-00.iconduck.com/assets.00/404-page-not-found-illustration-1024x499-muqmchqg.png
+                  </xsl:otherwise>
+               </xsl:choose>
+            </xsl:attribute>
+         </img>
+         <div>
+            <p class="text-sm font-medium text-white"><xsl:value-of select="$competition/fb:name" /></p>
+            <p class="text-xs text-gray-400"><xsl:value-of select="$competition/fb:country" /></p>
          </div>
-         
-         <xsl:call-template name="process-competitions">
-            <xsl:with-param name="remaining" select="$rest" />
-         </xsl:call-template>
-      </xsl:if>
+      </div>
    </xsl:template>
 
    <xsl:template match="fb:player">
@@ -141,5 +129,4 @@
          </div>
       </div>
    </xsl:template>
-
 </xsl:stylesheet>

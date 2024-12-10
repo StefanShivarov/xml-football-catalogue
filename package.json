@@ -1,0 +1,16 @@
+{
+  "name": "xml-football-catalogue",
+  "version": "1.0.0",
+  "description": "Repository for my XML project at the Faculty of Mathematics and Informatics. It features a XML football teams catalogue with XSD validation, and data visualization using XSLT and CSS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

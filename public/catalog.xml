@@ -2,12 +2,16 @@
 <?xml-stylesheet type="text/xsl" href="catalog.xsl"?>
 <catalogue xmlns="http://www.example.com/football" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.com/football schema.xsd">
    <teams>
-      <team id="team1" competitions="comp1 comp2">
+      <team id="team1">
          <name>Real Madrid</name>
          <country>Spain</country>
          <city>Madrid</city>
          <stadium>Santiago Bernabeu</stadium>
          <founded>1902</founded>
+         <competitions>
+            <competition ref="comp1" />
+            <competition ref="comp2" />
+         </competitions>
          <players>
             <player id="player1" team="team1">
                <name>Karim Benzema</name>
@@ -41,12 +45,12 @@
       <competition id="comp1">
          <name>La Liga</name>
          <country>Spain</country>
-          <logo src="https://w1.pngwing.com/pngs/1009/29/png-transparent-barcelona-logo-spain-woolshed-baa-grill-football-fc-barcelona-sports-la-liga-line-thumbnail.png" />
+         <logo src="https://w1.pngwing.com/pngs/1009/29/png-transparent-barcelona-logo-spain-woolshed-baa-grill-football-fc-barcelona-sports-la-liga-line-thumbnail.png" />
       </competition>
       <competition id="comp2">
          <name>UEFA Champions League</name>
          <country>Europe</country>
-          <logo src="https://w1.pngwing.com/pngs/1009/29/png-transparent-barcelona-logo-spain-woolshed-baa-grill-football-fc-barcelona-sports-la-liga-line-thumbnail.png" />
+         <logo src="https://w1.pngwing.com/pngs/1009/29/png-transparent-barcelona-logo-spain-woolshed-baa-grill-football-fc-barcelona-sports-la-liga-line-thumbnail.png" />
       </competition>
    </competitions>
 </catalogue>
