@@ -40,17 +40,54 @@
          </coach>
          <logo src="https://images5.alphacoders.com/770/770521.jpg" />
       </team>
+      <team id="team2">
+         <name>Manchester United</name>
+         <country>England</country>
+         <city>Manchester</city>
+         <stadium>Old Trafford</stadium>
+         <founded>1878</founded>
+         <competitions>
+            <competition ref="comp2" />
+         </competitions>
+         <players>
+            <player id="player2" team="team2">
+               <name>Marcus Rashford</name>
+               <age>26</age>
+               <nationality>England</nationality>
+               <positions>
+                  <position>LW</position>
+                  <position>ST</position>
+               </positions>
+               <stats>
+                  <matchesPlayed>300</matchesPlayed>
+                  <goals>120</goals>
+                  <assists>80</assists>
+                  <yellowCards>10</yellowCards>
+                  <redCards>0</redCards>
+                  <cleanSheets>0</cleanSheets>
+               </stats>
+               <image src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Marcus_Rashford%2C_FWC_2018_-_Round_of_16_-_COL_v_ENG_-_Photo_106_%28cropped%29.jpg/800px-Marcus_Rashford%2C_FWC_2018_-_Round_of_16_-_COL_v_ENG_-_Photo_106_%28cropped%29.jpg" />
+            </player>
+         </players>
+         <coach id="coach2" team="team2">
+            <name>Erik ten Hag</name>
+            <age>54</age>
+            <nationality>Netherlands</nationality>
+            <image src="https://upload.wikimedia.org/wikipedia/commons/4/47/Erik_ten_Hag_2017.jpg" />
+         </coach>
+         <logo src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" />
+      </team>
    </teams>
    <competitions>
       <competition id="comp1">
          <name>La Liga</name>
          <country>Spain</country>
-         <logo src="https://w1.pngwing.com/pngs/1009/29/png-transparent-barcelona-logo-spain-woolshed-baa-grill-football-fc-barcelona-sports-la-liga-line-thumbnail.png" />
+         <logo src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/LaLiga_logo_2023.svg/1200px-LaLiga_logo_2023.svg.png" />
       </competition>
       <competition id="comp2">
          <name>UEFA Champions League</name>
          <country>Europe</country>
-         <logo src="https://w1.pngwing.com/pngs/1009/29/png-transparent-barcelona-logo-spain-woolshed-baa-grill-football-fc-barcelona-sports-la-liga-line-thumbnail.png" />
+         <logo src="https://miro.medium.com/v2/resize:fit:948/0*RBVBvrQpGTKBjVFL.png" />
       </competition>
    </competitions>
 </catalogue>
