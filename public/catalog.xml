@@ -2,92 +2,557 @@
 <?xml-stylesheet type="text/xsl" href="catalog.xsl"?>
 <catalogue xmlns="http://www.example.com/football" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.com/football schema.xsd">
    <teams>
-      <team id="team1">
-         <name>Real Madrid</name>
-         <country>Spain</country>
-         <city>Madrid</city>
-         <stadium>Santiago Bernabeu</stadium>
-         <founded>1902</founded>
-         <competitions>
-            <competition ref="comp1" />
-            <competition ref="comp2" />
-         </competitions>
-         <players>
-            <player id="player1" team="team1">
-               <name>Karim Benzema</name>
-               <age>35</age>
-               <nationality>France</nationality>
-               <positions>
-                  <position>ST</position>
-                  <position>CF</position>
-               </positions>
-               <stats>
-                  <matchesPlayed>500</matchesPlayed>
-                  <goals>300</goals>
-                  <assists>150</assists>
-                  <yellowCards>20</yellowCards>
-                  <redCards>1</redCards>
-                  <cleanSheets>0</cleanSheets>
-               </stats>
-               <image src="https://media.cnn.com/api/v1/images/stellar/prod/221017111358-01-karim-benzema.jpg?c=original" />
-            </player>
-         </players>
-         <coach id="coach1" team="team1">
-            <name>Carlo Ancelotti</name>
-            <age>64</age>
-            <nationality>Italy</nationality>
-            <image src="https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg)/origin-imgresizer.eurosport.com/2024/08/06/image-eb9a7b1e-0b2b-4c2e-a75b-d8adb4d25cb2-85-2560-1440.jpeg" />
-         </coach>
-         <logo src="https://images5.alphacoders.com/770/770521.jpg" />
-      </team>
-      <team id="team2">
+      <team id="man-utd">
          <name>Manchester United</name>
          <country>England</country>
          <city>Manchester</city>
          <stadium>Old Trafford</stadium>
          <founded>1878</founded>
          <competitions>
-            <competition ref="comp2" />
+            <competition ref="europa-league" />
+            <competition ref="premier-league" />
          </competitions>
          <players>
-            <player id="player2" team="team2">
+            <player id="andre-onana" team="man-utd">
+               <name>Andre Onana</name>
+               <age>28</age>
+               <nationality>Cameroon</nationality>
+               <positions>
+                  <position>GK</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p202641.png" />
+            </player>
+            <player id="de-ligt" team="man-utd">
+               <name>Matthijs de Ligt</name>
+               <age>25</age>
+               <nationality>Netherlands</nationality>
+               <positions>
+                  <position>CB</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p209365.png" />
+            </player>
+            <player id="lisandro-martinez" team="man-utd">
+               <name>Lisandro Martínez</name>
+               <age>26</age>
+               <nationality>Argentina</nationality>
+               <positions>
+                  <position>CB</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p221820.png" />
+            </player>
+            <player id="shaw" team="man-utd">
+               <name>Luke Shaw</name>
+               <age>29</age>
+               <nationality>England</nationality>
+               <positions>
+                  <position>LB</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p106760.png" />
+            </player>
+            <player id="casemiro" team="man-utd">
+               <name>Casemiro</name>
+               <age>32</age>
+               <nationality>Brazil</nationality>
+               <positions>
+                  <position>CDM</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p61256.png" />
+            </player>
+            <player id="bruno-fernandes" team="man-utd">
+               <name>Bruno Fernandes</name>
+               <age>29</age>
+               <nationality>Portugal</nationality>
+               <positions>
+                  <position>CAM</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p141746.png" />
+            </player>
+            <player id="rashford" team="man-utd">
                <name>Marcus Rashford</name>
                <age>26</age>
                <nationality>England</nationality>
                <positions>
                   <position>LW</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p176297.png" />
+            </player>
+            <player id="amad" team="man-utd">
+               <name>Amad Diallo</name>
+               <age>22</age>
+               <nationality>Cote D'Ivoire</nationality>
+               <positions>
+                  <position>RM</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p493250.png" />
+            </player>
+            <player id="hojlund" team="man-utd">
+               <name>Rasmus Højlund</name>
+               <age>21</age>
+               <nationality>Denmark</nationality>
+               <positions>
+                  <position>CF</position>
                   <position>ST</position>
                </positions>
                <stats>
-                  <matchesPlayed>300</matchesPlayed>
-                  <goals>120</goals>
-                  <assists>80</assists>
-                  <yellowCards>10</yellowCards>
+                  <matchesPlayed>40</matchesPlayed>
+                  <goals>12</goals>
+                  <assists>5</assists>
+                  <yellowCards>3</yellowCards>
                   <redCards>0</redCards>
                   <cleanSheets>0</cleanSheets>
                </stats>
-               <image src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Marcus_Rashford%2C_FWC_2018_-_Round_of_16_-_COL_v_ENG_-_Photo_106_%28cropped%29.jpg/800px-Marcus_Rashford%2C_FWC_2018_-_Round_of_16_-_COL_v_ENG_-_Photo_106_%28cropped%29.jpg" />
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p497894.png" />
+            </player>
+            <player id="player10" team="man-utd">
+               <name>Kobbie Mainoo</name>
+               <age>19</age>
+               <nationality>England</nationality>
+               <positions>
+                  <position>CDM</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p516895.png" />
+            </player>
+            <player id="player11" team="man-utd">
+               <name>Alejandro Garnacho</name>
+               <age>20</age>
+               <nationality>Argentina</nationality>
+               <positions>
+                  <position>LW</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p493105.png" />
             </player>
          </players>
-         <coach id="coach2" team="team2">
-            <name>Erik ten Hag</name>
-            <age>54</age>
-            <nationality>Netherlands</nationality>
-            <image src="https://upload.wikimedia.org/wikipedia/commons/4/47/Erik_ten_Hag_2017.jpg" />
+         <coach id="amorim" team="man-utd">
+            <name>Ruben Amorim</name>
+            <age>38</age>
+            <nationality>Portugal</nationality>
+            <image src="https://images2.minutemediacdn.com/image/upload/c_crop,w_4282,h_2408,x_0,y_371/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/90min_en_international_web/01jf01vn73da34f6abka.jpg" />
          </coach>
          <logo src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" />
       </team>
+      <team id="man-city">
+         <name>Manchester City</name>
+         <country>England</country>
+         <city>Manchester</city>
+         <stadium>Etihad Stadium</stadium>
+         <founded>1880</founded>
+         <competitions>
+            <competition ref="premier-league" />
+            <competition ref="champions-league" />
+         </competitions>
+         <players>
+            <player id="ederson" team="man-city">
+               <name>Ederson</name>
+               <age>31</age>
+               <nationality>Brazil</nationality>
+               <positions>
+                  <position>GK</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p121160.png" />
+            </player>
+            <player id="walker" team="man-city">
+               <name>Kyle Walker</name>
+               <age>34</age>
+               <nationality>England</nationality>
+               <positions>
+                  <position>RB</position>
+                  <position>RWB</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p58621.png" />
+            </player>
+            <player id="ruben-dias" team="man-city">
+               <name>Rúben Dias</name>
+               <age>27</age>
+               <nationality>Portugal</nationality>
+               <positions>
+                  <position>CB</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p171314.png" />
+            </player>
+            <player id="stones" team="man-city">
+               <name>John Stones</name>
+               <age>30</age>
+               <nationality>England</nationality>
+               <positions>
+                  <position>CB</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p97299.png" />
+            </player>
+            <player id="gvardiol" team="man-city">
+               <name>Josko Gvardiol</name>
+               <age>22</age>
+               <nationality>Croatia</nationality>
+               <positions>
+                  <position>CB</position>
+                  <position>LB</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p477424.png" />
+            </player>
+            <player id="rodri" team="man-city">
+               <name>Rodri</name>
+               <age>28</age>
+               <nationality>Spain</nationality>
+               <positions>
+                  <position>CDM</position>
+                  <position>CM</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p220566.png" />
+            </player>
+            <player id="de-bruyne" team="man-city">
+               <name>Kevin De Bruyne</name>
+               <age>33</age>
+               <nationality>Belgium</nationality>
+               <positions>
+                  <position>CAM</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p61366.png" />
+            </player>
+            <player id="foden" team="man-city">
+               <name>Phil Foden</name>
+               <age>24</age>
+               <nationality>England</nationality>
+               <positions>
+                  <position>CAM</position>
+                  <position>LW</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p209244.png" />
+            </player>
+            <player id="bernardo" team="man-city">
+               <name>Bernardo Silva</name>
+               <age>30</age>
+               <nationality>Portugal</nationality>
+               <positions>
+                  <position>CAM</position>
+                  <position>RM</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p165809.png" />
+            </player>
+            <player id="gundogan" team="man-city">
+               <name>Ilkay Gündogan</name>
+               <age>34</age>
+               <nationality>Germany</nationality>
+               <positions>
+                  <position>CM</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p59859.png" />
+            </player>
+            <player id="haaland" team="man-city">
+               <name>Erling Haaland</name>
+               <age>24</age>
+               <nationality>Norway</nationality>
+               <positions>
+                  <position>ST</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p223094.png" />
+            </player>
+         </players>
+         <coach id="guardiola" team="man-city">
+            <name>Pep Guardiola</name>
+            <age>53</age>
+            <nationality>Spain</nationality>
+            <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/man37974.png" />
+         </coach>
+         <logo src="https://w7.pngwing.com/pngs/71/951/png-transparent-manchester-city-illustration-manchester-city-f-c-eds-and-academy-city-of-manchester-stadium-sunderland-a-f-c-ladies-others-city-logo-area-thumbnail.png" />
+      </team>
+      <team id="barcelona">
+         <name>Barcelona</name>
+         <country>Spain</country>
+         <city>Barcelona</city>
+         <stadium>Camp Nou</stadium>
+         <founded>1899</founded>
+         <competitions>
+            <competition ref="la-liga" />
+            <competition ref="champions-league" />
+         </competitions>
+         <players>
+            <player id="inaki-pena" team="barcelona">
+               <name>Iñaki Peña</name>
+               <age>25</age>
+               <nationality>Spain</nationality>
+               <positions>
+                  <position>GK</position>
+               </positions>
+               <image src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/250081721.jpg" />
+            </player>
+           <player id="kounde" team="barcelona">
+               <name>Jules Koundé</name>
+               <age>26</age>
+               <nationality>France</nationality>
+               <positions>
+                  <position>CB</position>
+               </positions>
+               <image src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/250096309.jpg" />
+            </player>
+            <player id="christensen" team="barcelona">
+               <name>Andreas Christensen</name>
+               <age>28</age>
+               <nationality>Denmark</nationality>
+               <positions>
+                  <position>CB</position>
+               </positions>
+               <image src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/250041718.jpg" />
+            </player>
+            <player id="balde" team="barcelona">
+               <name>Alejandro Balde</name>
+               <age>20</age>
+               <nationality>Spain</nationality>
+               <positions>
+                  <position>LB</position>
+               </positions>
+               <image src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/250135416.jpg" />
+            </player>
+            <player id="de-jong" team="barcelona">
+               <name>Frenkie de Jong</name>
+               <age>26</age>
+               <nationality>Netherlands</nationality>
+               <positions>
+                  <position>CM</position>
+               </positions>
+               <image src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/50327423.jpg" />
+            </player>
+            <player id="pedri" team="barcelona">
+               <name>Pedri</name>
+               <age>22</age>
+               <nationality>Spain</nationality>
+               <positions>
+                  <position>CM</position>
+                  <position>CAM</position>
+               </positions>
+               <image src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/250143693.jpg" />
+            </player>
+            <player id="gavi" team="barcelona">
+               <name>Gavi</name>
+               <age>20</age>
+               <nationality>Spain</nationality>
+               <positions>
+                  <position>CM</position>
+               </positions>
+               <image src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/250139255.jpg" />
+            </player>
+            <player id="olmo" team="barcelona">
+               <name>Dani Olmo</name>
+               <age>26</age>
+               <nationality>Spain</nationality>
+               <positions>
+                  <position>CAM</position>
+               </positions>
+               <image src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/250081720.jpg" />
+            </player>
+            <player id="ferran-torres" team="barcelona">
+               <name>Ferran Torres</name>
+               <age>24</age>
+               <nationality>Spain</nationality>
+               <positions>
+                  <position>RW</position>
+                  <position>CF</position>
+               </positions>
+               <image src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/250088320.jpg" />
+            </player>
+            <player id="lewandowski" team="barcelona">
+               <name>Robert Lewandowski</name>
+               <age>36</age>
+               <nationality>Poland</nationality>
+               <positions>
+                  <position>ST</position>
+               </positions>
+               <image src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/250002096.jpg" />
+            </player>
+            <player id="raphinha" team="barcelona">
+               <name>Raphinha</name>
+               <age>28</age>
+               <nationality>Brazil</nationality>
+               <positions>
+                  <position>RW</position>
+                  <position>CF</position>
+               </positions>
+               <image src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/250112880.jpg" />
+            </player>
+            <player id="yamal" team="barcelona">
+               <name>Lamine Yamal</name>
+               <age>17</age>
+               <nationality>Spain</nationality>
+               <positions>
+                  <position>RW</position>
+               </positions>
+               <image src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/250176450.jpg" />
+            </player>
+         </players>
+         <coach id="hansi-flick" team="man-city">
+            <name>Hansi Flick</name>
+            <age>59</age>
+            <nationality>Germany</nationality>
+            <image src="https://img.uefa.com/imgml/TP/players/1/2025/75x75/250200261.jpg" />
+         </coach>
+         <logo src="https://img.uefa.com/imgml/TP/teams/logos/240x240/50080.png" />
+      </team>
+      <team id="chelsea">
+   <name>Chelsea</name>
+   <country>England</country>
+   <city>London</city>
+   <stadium>Stamford Bridge</stadium>
+   <founded>1905</founded>
+   <competitions>
+      <competition ref="premier-league" />
+      <competition ref="conference-league" />
+   </competitions>
+   <players>
+      <player id="sanchez" team="chelsea">
+         <name>Robert Sanchez</name>
+         <age>26</age>
+         <nationality>Spain</nationality>
+         <positions>
+            <position>GK</position>
+         </positions>
+         <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p215059.png" />
+      </player>
+      <player id="cucurella" team="chelsea">
+         <name>Marc Cucurella</name>
+         <age>26</age>
+         <nationality>Spain</nationality>
+         <positions>
+            <position>LB</position>
+         </positions>
+         <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p179268.png" />
+      </player>
+      <player id="james" team="chelsea">
+         <name>Reece James</name>
+         <age>25</age>
+         <nationality>England</nationality>
+         <positions>
+            <position>RB</position>
+         </positions>
+         <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p225796.png" />
+      </player>
+      <player id="colwill" team="chelsea">
+         <name>Levi Colwill</name>
+         <age>21</age>
+         <nationality>England</nationality>
+         <positions>
+            <position>CB</position>
+         </positions>
+         <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p460028.png" />
+      </player>
+      <player id="fofana" team="chelsea">
+         <name>Wesley Fofana</name>
+         <age>23</age>
+         <nationality>France</nationality>
+         <positions>
+            <position>CB</position>
+         </positions>
+         <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p444463.png" />
+      </player>
+      <player id="caicedo" team="chelsea">
+         <name>Moisés Caicedo</name>
+         <age>22</age>
+         <nationality>Ecuador</nationality>
+         <positions>
+            <position>CDM</position>
+            <position>CM</position>
+         </positions>
+         <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p486672.png" />
+      </player>
+      <player id="nkunku" team="chelsea">
+         <name>Christopher Nkunku</name>
+         <age>27</age>
+         <nationality>France</nationality>
+         <positions>
+            <position>CAM</position>
+            <position>CF</position>
+         </positions>
+         <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p213198.png" />
+      </player>
+      <player id="palmer" team="chelsea">
+         <name>Cole Palmer</name>
+         <age>21</age>
+         <nationality>England</nationality>
+         <positions>
+            <position>CAM</position>
+            <position>RW</position>
+         </positions>
+         <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p244851.png" />
+      </player>
+      <player id="enzo" team="chelsea">
+         <name>Enzo Fernández</name>
+         <age>23</age>
+         <nationality>Argentina</nationality>
+         <positions>
+            <position>CM</position>
+         </positions>
+         <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p448047.png" />
+      </player>
+      <player id="noni" team="chelsea">
+         <name>Noni Madueke</name>
+         <age>21</age>
+         <nationality>England</nationality>
+         <positions>
+            <position>RW</position>
+         </positions>
+         <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p248857.png" />
+      </player>
+      <player id="pedro-neto" team="chelsea">
+         <name>Pedro Neto</name>
+         <age>21</age>
+         <nationality>Brazil</nationality>
+         <positions>
+            <position>LW</position>
+            <position>RW</position>
+         </positions>
+         <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p247632.png" />
+      </player>
+      <player id="jackson" team="chelsea">
+         <name>Nicolas Jackson</name>
+         <age>22</age>
+         <nationality>Senegal</nationality>
+         <positions>
+            <position>ST</position>
+         </positions>
+         <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p517052.png" />
+      </player>
+   </players>
+   <coach id="maresca" team="chelsea">
+      <name>Enzo Maresca</name>
+      <age>44</age>
+      <nationality>Italy</nationality>
+      <image src="https://metro.co.uk/wp-content/uploads/2024/11/GettyImages-2181969385.jpg?quality=90&amp;strip=all&amp;w=646" />
+   </coach>
+   <logo src="https://resources.premierleague.com/premierleague/badges/t8.png" />
+</team>
    </teams>
    <competitions>
-      <competition id="comp1">
+      <competition id="la-liga">
          <name>La Liga</name>
          <country>Spain</country>
          <logo src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/LaLiga_logo_2023.svg/1200px-LaLiga_logo_2023.svg.png" />
       </competition>
-      <competition id="comp2">
+      <competition id="champions-league">
          <name>UEFA Champions League</name>
          <country>Europe</country>
          <logo src="https://miro.medium.com/v2/resize:fit:948/0*RBVBvrQpGTKBjVFL.png" />
+      </competition>
+      <competition id="europa-league">
+         <name>UEFA Europa League</name>
+         <country>Europe</country>
+         <logo src="https://play-lh.googleusercontent.com/wEDc7PkgogH9nx9UfGIORcO5XNND8oPGnOyVujbdrMyVtbAr-G4K-er8Mbkrw5pIIA" />
+      </competition>
+      <competition id="conference-league">
+         <name>UEFA Conference League</name>
+         <country>Europe</country>
+         <logo src="https://play-lh.googleusercontent.com/nWrxbKkGog67rL2MBswBdFUdZXYjjsA2y_eZFkD0wufs7_ImP-564xgJudsTffgiH-Lt" />
+      </competition>
+      <competition id="serie-a">
+         <name>Serie A</name>
+         <country>Italy</country>
+         <logo src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Serie_A_logo_2020.svg/600px-Serie_A_logo_2020.svg.png" />
+      </competition>
+      <competition id="bundesliga">
+         <name>Bundesliga</name>
+         <country>Germany</country>
+         <logo src="" />
+      </competition>
+      <competition id="premier-league">
+         <name>Premier League</name>
+         <country>England</country>
+         <logo src="https://www.premierleague.com/resources/rebrand/v7.153.31/i/elements/pl-main-logo.png" />
       </competition>
    </competitions>
 </catalogue>
