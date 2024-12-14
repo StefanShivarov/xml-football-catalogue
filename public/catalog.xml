@@ -77,6 +77,35 @@
          </coach>
          <logo src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" />
       </team>
+      <team id="team3">
+         <name>Manchester City</name>
+         <country>England</country>
+         <city>Manchester</city>
+         <stadium>Etihad Stadium</stadium>
+         <founded>1880</founded>
+         <competitions>
+            <competition ref="comp3" />
+            <competition ref="comp2" />
+         </competitions>
+         <players>
+            <player id="player3" team="team3">
+               <name>Erling Haaland</name>
+               <age>24</age>
+               <nationality>Norway</nationality>
+               <positions>
+                  <position>ST</position>
+               </positions>
+               <image src="https://www.mancity.com/meta/media/e2lawnab/erling-haaland.png" />
+            </player>
+         </players>
+         <coach id="coach3" team="team3">
+            <name>Pep Guardiola</name>
+            <age>53</age>
+            <nationality>Spain</nationality>
+            <image src="https://www.thesportsbank.net/wp-content/uploads/2021/01/pep-guardiola-2.jpg" />
+         </coach>
+         <logo src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/1200px-Manchester_City_FC_badge.svg.png" />
+      </team>
    </teams>
    <competitions>
       <competition id="comp1">
@@ -88,6 +117,11 @@
          <name>UEFA Champions League</name>
          <country>Europe</country>
          <logo src="https://miro.medium.com/v2/resize:fit:948/0*RBVBvrQpGTKBjVFL.png" />
+      </competition>
+      <competition id="comp3">
+         <name>Premier League</name>
+         <country>England</country>
+         <logo src="https://assets.turbologo.com/blog/es/2020/01/19132708/Premier-League-symbol.png" />
       </competition>
    </competitions>
 </catalogue>
