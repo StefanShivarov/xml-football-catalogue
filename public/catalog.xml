@@ -274,7 +274,7 @@
                </positions>
                <image src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/250081721.jpg" />
             </player>
-           <player id="kounde" team="barcelona">
+            <player id="kounde" team="barcelona">
                <name>Jules Koundé</name>
                <age>26</age>
                <nationality>France</nationality>
@@ -386,137 +386,137 @@
          <logo src="https://img.uefa.com/imgml/TP/teams/logos/240x240/50080.png" />
       </team>
       <team id="chelsea">
-   <name>Chelsea</name>
-   <country>England</country>
-   <city>London</city>
-   <stadium>Stamford Bridge</stadium>
-   <founded>1905</founded>
-   <competitions>
-      <competition ref="premier-league" />
-      <competition ref="conference-league" />
-   </competitions>
-   <players>
-      <player id="sanchez" team="chelsea">
-         <name>Robert Sanchez</name>
-         <age>26</age>
-         <nationality>Spain</nationality>
-         <positions>
-            <position>GK</position>
-         </positions>
-         <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p215059.png" />
-      </player>
-      <player id="cucurella" team="chelsea">
-         <name>Marc Cucurella</name>
-         <age>26</age>
-         <nationality>Spain</nationality>
-         <positions>
-            <position>LB</position>
-         </positions>
-         <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p179268.png" />
-      </player>
-      <player id="james" team="chelsea">
-         <name>Reece James</name>
-         <age>25</age>
-         <nationality>England</nationality>
-         <positions>
-            <position>RB</position>
-         </positions>
-         <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p225796.png" />
-      </player>
-      <player id="colwill" team="chelsea">
-         <name>Levi Colwill</name>
-         <age>21</age>
-         <nationality>England</nationality>
-         <positions>
-            <position>CB</position>
-         </positions>
-         <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p460028.png" />
-      </player>
-      <player id="fofana" team="chelsea">
-         <name>Wesley Fofana</name>
-         <age>23</age>
-         <nationality>France</nationality>
-         <positions>
-            <position>CB</position>
-         </positions>
-         <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p444463.png" />
-      </player>
-      <player id="caicedo" team="chelsea">
-         <name>Moisés Caicedo</name>
-         <age>22</age>
-         <nationality>Ecuador</nationality>
-         <positions>
-            <position>CDM</position>
-            <position>CM</position>
-         </positions>
-         <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p486672.png" />
-      </player>
-      <player id="nkunku" team="chelsea">
-         <name>Christopher Nkunku</name>
-         <age>27</age>
-         <nationality>France</nationality>
-         <positions>
-            <position>CAM</position>
-            <position>CF</position>
-         </positions>
-         <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p213198.png" />
-      </player>
-      <player id="palmer" team="chelsea">
-         <name>Cole Palmer</name>
-         <age>21</age>
-         <nationality>England</nationality>
-         <positions>
-            <position>CAM</position>
-            <position>RW</position>
-         </positions>
-         <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p244851.png" />
-      </player>
-      <player id="enzo" team="chelsea">
-         <name>Enzo Fernández</name>
-         <age>23</age>
-         <nationality>Argentina</nationality>
-         <positions>
-            <position>CM</position>
-         </positions>
-         <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p448047.png" />
-      </player>
-      <player id="noni" team="chelsea">
-         <name>Noni Madueke</name>
-         <age>21</age>
-         <nationality>England</nationality>
-         <positions>
-            <position>RW</position>
-         </positions>
-         <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p248857.png" />
-      </player>
-      <player id="pedro-neto" team="chelsea">
-         <name>Pedro Neto</name>
-         <age>21</age>
-         <nationality>Brazil</nationality>
-         <positions>
-            <position>LW</position>
-            <position>RW</position>
-         </positions>
-         <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p247632.png" />
-      </player>
-      <player id="jackson" team="chelsea">
-         <name>Nicolas Jackson</name>
-         <age>22</age>
-         <nationality>Senegal</nationality>
-         <positions>
-            <position>ST</position>
-         </positions>
-         <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p517052.png" />
-      </player>
-   </players>
-   <coach id="maresca" team="chelsea">
-      <name>Enzo Maresca</name>
-      <age>44</age>
-      <nationality>Italy</nationality>
-      <image src="https://metro.co.uk/wp-content/uploads/2024/11/GettyImages-2181969385.jpg?quality=90&amp;strip=all&amp;w=646" />
-   </coach>
-   <logo src="https://resources.premierleague.com/premierleague/badges/t8.png" />
-</team>
+         <name>Chelsea</name>
+         <country>England</country>
+         <city>London</city>
+         <stadium>Stamford Bridge</stadium>
+         <founded>1905</founded>
+         <competitions>
+            <competition ref="premier-league" />
+            <competition ref="conference-league" />
+         </competitions>
+         <players>
+            <player id="sanchez" team="chelsea">
+               <name>Robert Sanchez</name>
+               <age>26</age>
+               <nationality>Spain</nationality>
+               <positions>
+                  <position>GK</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p215059.png" />
+            </player>
+            <player id="cucurella" team="chelsea">
+               <name>Marc Cucurella</name>
+               <age>26</age>
+               <nationality>Spain</nationality>
+               <positions>
+                  <position>LB</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p179268.png" />
+            </player>
+            <player id="james" team="chelsea">
+               <name>Reece James</name>
+               <age>25</age>
+               <nationality>England</nationality>
+               <positions>
+                  <position>RB</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p225796.png" />
+            </player>
+            <player id="colwill" team="chelsea">
+               <name>Levi Colwill</name>
+               <age>21</age>
+               <nationality>England</nationality>
+               <positions>
+                  <position>CB</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p460028.png" />
+            </player>
+            <player id="fofana" team="chelsea">
+               <name>Wesley Fofana</name>
+               <age>23</age>
+               <nationality>France</nationality>
+               <positions>
+                  <position>CB</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p444463.png" />
+            </player>
+            <player id="caicedo" team="chelsea">
+               <name>Moisés Caicedo</name>
+               <age>22</age>
+               <nationality>Ecuador</nationality>
+               <positions>
+                  <position>CDM</position>
+                  <position>CM</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p486672.png" />
+            </player>
+            <player id="nkunku" team="chelsea">
+               <name>Christopher Nkunku</name>
+               <age>27</age>
+               <nationality>France</nationality>
+               <positions>
+                  <position>CAM</position>
+                  <position>CF</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p213198.png" />
+            </player>
+            <player id="palmer" team="chelsea">
+               <name>Cole Palmer</name>
+               <age>21</age>
+               <nationality>England</nationality>
+               <positions>
+                  <position>CAM</position>
+                  <position>RW</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p244851.png" />
+            </player>
+            <player id="enzo" team="chelsea">
+               <name>Enzo Fernández</name>
+               <age>23</age>
+               <nationality>Argentina</nationality>
+               <positions>
+                  <position>CM</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p448047.png" />
+            </player>
+            <player id="noni" team="chelsea">
+               <name>Noni Madueke</name>
+               <age>21</age>
+               <nationality>England</nationality>
+               <positions>
+                  <position>RW</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p248857.png" />
+            </player>
+            <player id="pedro-neto" team="chelsea">
+               <name>Pedro Neto</name>
+               <age>21</age>
+               <nationality>Brazil</nationality>
+               <positions>
+                  <position>LW</position>
+                  <position>RW</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p247632.png" />
+            </player>
+            <player id="jackson" team="chelsea">
+               <name>Nicolas Jackson</name>
+               <age>22</age>
+               <nationality>Senegal</nationality>
+               <positions>
+                  <position>ST</position>
+               </positions>
+               <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p517052.png" />
+            </player>
+         </players>
+         <coach id="maresca" team="chelsea">
+            <name>Enzo Maresca</name>
+            <age>44</age>
+            <nationality>Italy</nationality>
+            <image src="https://metro.co.uk/wp-content/uploads/2024/11/GettyImages-2181969385.jpg?quality=90&amp;strip=all&amp;w=646" />
+         </coach>
+         <logo src="https://resources.premierleague.com/premierleague/badges/t8.png" />
+      </team>
    </teams>
    <competitions>
       <competition id="la-liga">
