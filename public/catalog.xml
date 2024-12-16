@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="catalog.xsl"?>
+<!DOCTYPE catalogue [
+   <!ENTITY man-ud-logo SYSTEM "assets/Manchester_United_FC_crest.svg" NDATA svg>
+]>
 <catalogue xmlns="http://www.example.com/football" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.com/football schema.xsd">
    <teams>
       <team id="man-utd">
@@ -128,7 +131,7 @@
             <nationality>Portugal</nationality>
             <image src="https://images2.minutemediacdn.com/image/upload/c_crop,w_4282,h_2408,x_0,y_371/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/90min_en_international_web/01jf01vn73da34f6abka.jpg" />
          </coach>
-         <logo src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" />
+         <logo src="man-ud-logo" />
       </team>
       <team id="man-city">
          <name>Manchester City</name>
