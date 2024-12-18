@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="catalog.xsl"?>
+<!DOCTYPE catalogue [
+   <!ENTITY man-utd-logo SYSTEM "assets/manchester-united.svg" NDATA svg>
+   <!ENTITY man-city-logo SYSTEM "assets/manchester-city.png" NDATA png>
+   <!ENTITY barcelona-logo SYSTEM "assets/barcelona.png" NDATA png>
+   <!ENTITY chelsea-logo SYSTEM "assets/chelsea.png" NDATA png>
+   <!ENTITY bundesliga-logo SYSTEM "assets/bundesliga.png" NDATA png>
+   <!ENTITY champions-league-logo SYSTEM "assets/champions-league.png" NDATA png>
+   <!ENTITY conference-league-logo SYSTEM "assets/conference-league.png" NDATA png>
+   <!ENTITY europa-league-logo SYSTEM "assets/europe-league.png" NDATA png>
+   <!ENTITY laliga-logo SYSTEM "assets/laliga.png" NDATA png>
+   <!ENTITY premier-league-logo SYSTEM "assets/premier-league.png" NDATA png>
+   <!ENTITY serie-a-logo SYSTEM "assets/serie-a.png" NDATA png>
+]>
 <catalogue xmlns="http://www.example.com/football" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.com/football schema.xsd">
    <teams>
       <team id="man-utd">
@@ -128,7 +141,7 @@
             <nationality>Portugal</nationality>
             <image src="https://images2.minutemediacdn.com/image/upload/c_crop,w_4282,h_2408,x_0,y_371/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/90min_en_international_web/01jf01vn73da34f6abka.jpg" />
          </coach>
-         <logo src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" />
+         <logo src="man-utd-logo" />
       </team>
       <team id="man-city">
          <name>Manchester City</name>
@@ -252,7 +265,7 @@
             <nationality>Spain</nationality>
             <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/man37974.png" />
          </coach>
-         <logo src="https://w7.pngwing.com/pngs/71/951/png-transparent-manchester-city-illustration-manchester-city-f-c-eds-and-academy-city-of-manchester-stadium-sunderland-a-f-c-ladies-others-city-logo-area-thumbnail.png" />
+         <logo src="man-city-logo" />
       </team>
       <team id="barcelona">
          <name>Barcelona</name>
@@ -383,7 +396,7 @@
             <nationality>Germany</nationality>
             <image src="https://img.uefa.com/imgml/TP/players/1/2025/75x75/250200261.jpg" />
          </coach>
-         <logo src="https://img.uefa.com/imgml/TP/teams/logos/240x240/50080.png" />
+         <logo src="barcelona-logo" />
       </team>
       <team id="chelsea">
          <name>Chelsea</name>
@@ -515,44 +528,44 @@
             <nationality>Italy</nationality>
             <image src="https://metro.co.uk/wp-content/uploads/2024/11/GettyImages-2181969385.jpg?quality=90&amp;strip=all&amp;w=646" />
          </coach>
-         <logo src="https://resources.premierleague.com/premierleague/badges/t8.png" />
+         <logo src="chelsea-logo" />
       </team>
    </teams>
    <competitions>
       <competition id="la-liga">
          <name>La Liga</name>
          <country>Spain</country>
-         <logo src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/LaLiga_logo_2023.svg/1200px-LaLiga_logo_2023.svg.png" />
+         <logo src="laliga-logo" />
       </competition>
       <competition id="champions-league">
          <name>UEFA Champions League</name>
          <country>Europe</country>
-         <logo src="https://miro.medium.com/v2/resize:fit:948/0*RBVBvrQpGTKBjVFL.png" />
+         <logo src="champions-league-logo" />
       </competition>
       <competition id="europa-league">
          <name>UEFA Europa League</name>
          <country>Europe</country>
-         <logo src="https://play-lh.googleusercontent.com/wEDc7PkgogH9nx9UfGIORcO5XNND8oPGnOyVujbdrMyVtbAr-G4K-er8Mbkrw5pIIA" />
+         <logo src="europa-league-logo" />
       </competition>
       <competition id="conference-league">
          <name>UEFA Conference League</name>
          <country>Europe</country>
-         <logo src="https://play-lh.googleusercontent.com/nWrxbKkGog67rL2MBswBdFUdZXYjjsA2y_eZFkD0wufs7_ImP-564xgJudsTffgiH-Lt" />
+         <logo src="conference-league-logo" />
       </competition>
       <competition id="serie-a">
          <name>Serie A</name>
          <country>Italy</country>
-         <logo src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Serie_A_logo_2020.svg/600px-Serie_A_logo_2020.svg.png" />
+         <logo src="serie-a-logo" />
       </competition>
       <competition id="bundesliga">
          <name>Bundesliga</name>
          <country>Germany</country>
-         <logo src="" />
+         <logo src="bundesliga-logo" />
       </competition>
       <competition id="premier-league">
          <name>Premier League</name>
          <country>England</country>
-         <logo src="https://www.premierleague.com/resources/rebrand/v7.153.31/i/elements/pl-main-logo.png" />
+         <logo src="premier-league-logo" />
       </competition>
    </competitions>
 </catalogue>

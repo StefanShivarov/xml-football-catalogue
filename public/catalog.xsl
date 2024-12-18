@@ -40,7 +40,7 @@
                      <xsl:attribute name="src">
                         <xsl:choose>
                            <xsl:when test="fb:logo/@src">
-                              <xsl:value-of select="fb:logo/@src" />
+                              <xsl:value-of select="unparsed-entity-uri(fb:logo/@src)" />
                            </xsl:when>
                            <xsl:otherwise>
                               https://static-00.iconduck.com/assets.00/404-page-not-found-illustration-1024x499-muqmchqg.png
@@ -89,7 +89,7 @@
             <xsl:attribute name="src">
                <xsl:choose>
                   <xsl:when test="$competition/fb:logo/@src">
-                     <xsl:value-of select="$competition/fb:logo/@src" />
+                     <xsl:value-of select="unparsed-entity-uri($competition/fb:logo/@src)" />
                   </xsl:when>
                   <xsl:otherwise>
                      https://static-00.iconduck.com/assets.00/404-page-not-found-illustration-1024x499-muqmchqg.png
