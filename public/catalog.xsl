@@ -142,7 +142,16 @@
 
    <xsl:template match="fb:player">
       <div class="flex items-center gap-2 bg-gray-700 px-3 py-2 rounded-lg shadow-sm">
-         <img class="w-8 h-8 rounded-full border-2 border-purple-500 object-cover" src="{fb:image/@src}" alt="Player Image" />
+         <img class="w-8 h-8 rounded-full border-2 border-purple-500 object-cover" alt="Player Image">
+         <xsl:attribute name="src">
+            <xsl:choose>
+               <xsl:when test="fb:image/@src">
+                  <xsl:value-of select="unparsed-entity-uri(fb:image/@src)" />
+               </xsl:when>
+               <xsl:otherwise>https://static-00.iconduck.com/assets.00/404-page-not-found-illustration-1024x499-muqmchqg.png</xsl:otherwise>
+            </xsl:choose>
+         </xsl:attribute>
+      </img>
          <div>
             <p class="text-sm font-medium text-white leading-none mb-1">
                <xsl:value-of select="fb:name" />
@@ -160,7 +169,16 @@
    
    <xsl:template match="fb:coach">
       <div class="flex items-center gap-3">
-         <img class="w-10 h-10 rounded-full object-cover" src="{fb:image/@src}" alt="Coach Image" />
+         <img class="w-10 h-10 rounded-full object-cover" alt="Coach Image" >
+            <xsl:attribute name="src">
+            <xsl:choose>
+               <xsl:when test="fb:image/@src">
+                  <xsl:value-of select="unparsed-entity-uri(fb:image/@src)" />
+               </xsl:when>
+               <xsl:otherwise>https://static-00.iconduck.com/assets.00/404-page-not-found-illustration-1024x499-muqmchqg.png</xsl:otherwise>
+            </xsl:choose>
+         </xsl:attribute>
+         </img>
          <div>
             <p class="text-sm font-medium text-white">
                <xsl:value-of select="fb:name" />

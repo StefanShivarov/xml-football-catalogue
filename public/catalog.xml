@@ -1,17 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="catalog.xsl"?>
 <!DOCTYPE catalogue [
-   <!ENTITY man-utd-logo SYSTEM "assets/manchester-united.svg" NDATA svg>
-   <!ENTITY man-city-logo SYSTEM "assets/manchester-city.png" NDATA png>
-   <!ENTITY barcelona-logo SYSTEM "assets/barcelona.png" NDATA png>
-   <!ENTITY chelsea-logo SYSTEM "assets/chelsea.png" NDATA png>
-   <!ENTITY bundesliga-logo SYSTEM "assets/bundesliga.png" NDATA png>
-   <!ENTITY champions-league-logo SYSTEM "assets/champions-league.png" NDATA png>
-   <!ENTITY conference-league-logo SYSTEM "assets/conference-league.png" NDATA png>
-   <!ENTITY europa-league-logo SYSTEM "assets/europe-league.png" NDATA png>
-   <!ENTITY laliga-logo SYSTEM "assets/laliga.png" NDATA png>
-   <!ENTITY premier-league-logo SYSTEM "assets/premier-league.png" NDATA png>
-   <!ENTITY serie-a-logo SYSTEM "assets/serie-a.png" NDATA png>
+   <!NOTATION png PUBLIC "image/png">
+   <!NOTATION jpg PUBLIC "image/jpeg">
+   
+   <!ENTITY man-utd-logo PUBLIC "man-utd-logo-identifier" "https://img.uefa.com/imgml/TP/teams/logos/50x50/52682.png" NDATA png>
+   <!ENTITY barcelona-logo PUBLIC "barcelona-logo-identifier" "https://img.uefa.com/imgml/TP/teams/logos/50x50/50080.png" NDATA png>
+   <!ENTITY chelsea-logo PUBLIC "chelsea-logo-identifier" "https://img.uefa.com/imgml/TP/teams/logos/50x50/52914.png" NDATA png>
+   <!ENTITY man-city-logo PUBLIC "man-city-logo-identifier" "https://img.uefa.com/imgml/TP/teams/logos/50x50/52919.png" NDATA png>
+
+   <!ENTITY premier-league-logo PUBLIC "premier-league-logo-identifier" "https://www.premierleague.com/resources/rebrand/v7.153.31/i/elements/pl-main-logo.png" NDATA png>
+   <!ENTITY la-liga-logo PUBLIC "la-liga-logo-identifier" "https://logos-world.net/wp-content/uploads/2023/07/LaLiga-Logo.jpg" NDATA jpg>
+   <!ENTITY champions-league-logo PUBLIC "champions-league-logo-identifier" "https://clubcompetitions-shop.com/cdn/shop/files/UCL_logo_Active_3d0c3dc1-a5f3-4d8c-9fb3-751aea1427c3_1600x.png?v=1718717914" NDATA png>
+   <!ENTITY conference-league-logo PUBLIC "conference-league-logo-identifier" "https://play-lh.googleusercontent.com/nWrxbKkGog67rL2MBswBdFUdZXYjjsA2y_eZFkD0wufs7_ImP-564xgJudsTffgiH-Lt" NDATA jpg>
+   <!ENTITY europa-league-logo PUBLIC "europa-league-logo-identifier" "https://play-lh.googleusercontent.com/wEDc7PkgogH9nx9UfGIORcO5XNND8oPGnOyVujbdrMyVtbAr-G4K-er8Mbkrw5pIIA" NDATA jpg>
+
+   <!ENTITY andre-onana-pic PUBLIC "andre-onana-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p202641.png" NDATA png>
+   <!ENTITY de-ligt-pic PUBLIC "de-ligt-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p209365.png" NDATA png>
+   <!ENTITY lisandro-martinez-pic PUBLIC "lisandro-martinez-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p221820.png" NDATA png>
+   <!ENTITY shaw-pic PUBLIC "shaw-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p106760.png" NDATA png>
+   <!ENTITY casemiro-pic PUBLIC "casemiro-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p61256.png" NDATA png>
+   <!ENTITY bruno-fernandes-pic PUBLIC "bruno-pic-fernandes-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p141746.png" NDATA png>
+   <!ENTITY rashford-pic PUBLIC "rashford-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p176297.png" NDATA png>
+   <!ENTITY amad-pic PUBLIC "amad-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p493250.png" NDATA png>
+   <!ENTITY hojlund-pic PUBLIC "hojlund-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p497894.png" NDATA png>
+   <!ENTITY mainoo-pic PUBLIC "mainoo-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p516895.png" NDATA png>
+   <!ENTITY garnacho-pic PUBLIC "garnacho-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p493105.png" NDATA png>
+   <!ENTITY amorim-pic PUBLIC "amorim-pic-identifier" "https://images2.minutemediacdn.com/image/upload/c_crop,w_4282,h_2408,x_0,y_371/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/90min_en_international_web/01jf01vn73da34f6abka.jpg" NDATA jpg>
+
+   <!ENTITY ederson-pic  PUBLIC "ederson-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p121160.png" NDATA png>
+   <!ENTITY walker-pic PUBLIC "walker-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p58621.png" NDATA png>
+   <!ENTITY ruben-dias-pic PUBLIC "ruben-dias-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p171314.png" NDATA png>
+   <!ENTITY stones-pic PUBLIC "stones-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p97299.png" NDATA png>
+   <!ENTITY gvardiol-pic PUBLIC "gvardiol-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p477424.png" NDATA png>
+   <!ENTITY rodri-pic PUBLIC "rodri-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p220566.png" NDATA png>
+   <!ENTITY de-bruyne-pic PUBLIC "de-bruyne-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p61366.png" NDATA png>
+   <!ENTITY foden-pic PUBLIC "foden-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p209244.png" NDATA png>
+   <!ENTITY bernardo-pic PUBLIC "bernardo-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p165809.png" NDATA png>
+   <!ENTITY gundogan-pic PUBLIC "gundogan-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p59859.png" NDATA png>
+   <!ENTITY haaland-pic PUBLIC "haaland-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p223094.png" NDATA png>
+   <!ENTITY guardiola-pic PUBLIC "guardiola-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/man37974.png" NDATA png>
+
+   <!ENTITY inaki-pena-pic PUBLIC "inaki-pena-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250096309.jpg" NDATA jpg>
+   <!ENTITY kounde-pic PUBLIC "kounde-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250096309.jpg" NDATA jpg>
+   <!ENTITY christensen-pic PUBLIC "christensen-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250041718.jpg" NDATA jpg>
+   <!ENTITY balde-pic PUBLIC "balde-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250135416.jpg" NDATA jpg>
+   <!ENTITY de-jong-pic PUBLIC "de-jong-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/50327423.jpg" NDATA jpg>
+   <!ENTITY pedri-pic PUBLIC "pedri-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250143693.jpg" NDATA jpg>
+   <!ENTITY gavi-pic PUBLIC "gavi-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250139255.jpg" NDATA jpg>
+   <!ENTITY olmo-pic PUBLIC "olmo-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250081720.jpg" NDATA jpg>
+   <!ENTITY ferran-torres-pic PUBLIC "ferran-torres-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250088320.jpg" NDATA jpg>
+   <!ENTITY lewandowski-pic PUBLIC "lewandowski-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250002096.jpg" NDATA jpg>
+   <!ENTITY raphinha-pic PUBLIC "raphinha-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250112880.jpg" NDATA jpg>
+   <!ENTITY yamal-pic PUBLIC "yamal-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250176450.jpg" NDATA jpg>
+   <!ENTITY hansi-flick-pic PUBLIC "hansi-flick-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/75x75/250200261.jpg" NDATA jpg>
+
+   <!ENTITY sanchez-pic PUBLIC "sanchez-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p215059.png" NDATA png>
+   <!ENTITY cucurella-pic PUBLIC "cucurella-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p179268.png" NDATA png>
+   <!ENTITY james-pic PUBLIC "james-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p225796.png" NDATA png>
+   <!ENTITY colwill-pic PUBLIC "colwill-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p460028.png" NDATA png>
+   <!ENTITY fofana-pic PUBLIC "fofana-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p444463.png" NDATA png>
+   <!ENTITY caicedo-pic PUBLIC "caicedo-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p486672.png" NDATA png>
+   <!ENTITY nkunku-pic PUBLIC "nkunku-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p213198.png" NDATA png>
+   <!ENTITY palmer-pic PUBLIC "palmer-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p244851.png" NDATA png>
+   <!ENTITY enzo-pic PUBLIC "enzo-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p448047.png" NDATA png>
+   <!ENTITY noni-pic PUBLIC "noni-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p248857.png" NDATA png>
+   <!ENTITY pedro-neto-pic PUBLIC "pedro-neto-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p247632.png" NDATA png>
+   <!ENTITY jackson-pic PUBLIC "jackson-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p517052.png" NDATA png>
+   <!ENTITY maresca-pic PUBLIC "maresca-pic-identifier" "https://metro.co.uk/wp-content/uploads/2024/11/GettyImages-2181969385.jpg?quality=90&amp;strip=all&amp;w=646" NDATA jpg>
+
 ]>
 <catalogue xmlns="http://www.example.com/football" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.com/football schema.xsd">
    <teams>
@@ -33,7 +90,7 @@
                <positions>
                   <position>GK</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p202641.png" />
+               <image src="andre-onana-pic" />
             </player>
             <player id="de-ligt" team="man-utd">
                <name>Matthijs de Ligt</name>
@@ -42,7 +99,7 @@
                <positions>
                   <position>CB</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p209365.png" />
+               <image src="de-ligt-pic" />
             </player>
             <player id="lisandro-martinez" team="man-utd">
                <name>Lisandro Martínez</name>
@@ -51,7 +108,7 @@
                <positions>
                   <position>CB</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p221820.png" />
+               <image src="lisandro-martinez-pic" />
             </player>
             <player id="shaw" team="man-utd">
                <name>Luke Shaw</name>
@@ -60,7 +117,7 @@
                <positions>
                   <position>LB</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p106760.png" />
+               <image src="shaw-pic" />
             </player>
             <player id="casemiro" team="man-utd">
                <name>Casemiro</name>
@@ -69,7 +126,7 @@
                <positions>
                   <position>CDM</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p61256.png" />
+               <image src="casemiro-pic" />
             </player>
             <player id="bruno-fernandes" team="man-utd">
                <name>Bruno Fernandes</name>
@@ -78,7 +135,7 @@
                <positions>
                   <position>CAM</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p141746.png" />
+               <image src="bruno-fernandes-pic" />
             </player>
             <player id="rashford" team="man-utd">
                <name>Marcus Rashford</name>
@@ -87,7 +144,7 @@
                <positions>
                   <position>LW</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p176297.png" />
+               <image src="rashford-pic" />
             </player>
             <player id="amad" team="man-utd">
                <name>Amad Diallo</name>
@@ -96,7 +153,7 @@
                <positions>
                   <position>RM</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p493250.png" />
+               <image src="amad-pic" />
             </player>
             <player id="hojlund" team="man-utd">
                <name>Rasmus Højlund</name>
@@ -114,32 +171,32 @@
                   <redCards>0</redCards>
                   <cleanSheets>0</cleanSheets>
                </stats>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p497894.png" />
+               <image src="hojlund-pic" />
             </player>
-            <player id="player10" team="man-utd">
+            <player id="mainoo" team="man-utd">
                <name>Kobbie Mainoo</name>
                <age>19</age>
                <nationality>England</nationality>
                <positions>
                   <position>CDM</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p516895.png" />
+               <image src="mainoo-pic" />
             </player>
-            <player id="player11" team="man-utd">
+            <player id="garnacho" team="man-utd">
                <name>Alejandro Garnacho</name>
                <age>20</age>
                <nationality>Argentina</nationality>
                <positions>
                   <position>LW</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p493105.png" />
+               <image src="garnacho-pic" />
             </player>
          </players>
          <coach id="amorim" team="man-utd">
             <name>Ruben Amorim</name>
             <age>38</age>
             <nationality>Portugal</nationality>
-            <image src="https://images2.minutemediacdn.com/image/upload/c_crop,w_4282,h_2408,x_0,y_371/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/90min_en_international_web/01jf01vn73da34f6abka.jpg" />
+            <image src="amorim-pic" />
          </coach>
          <logo src="man-utd-logo" />
       </team>
@@ -161,7 +218,7 @@
                <positions>
                   <position>GK</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p121160.png" />
+               <image src="ederson-pic" />
             </player>
             <player id="walker" team="man-city">
                <name>Kyle Walker</name>
@@ -171,7 +228,7 @@
                   <position>RB</position>
                   <position>RWB</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p58621.png" />
+               <image src="walker-pic" />
             </player>
             <player id="ruben-dias" team="man-city">
                <name>Rúben Dias</name>
@@ -180,7 +237,7 @@
                <positions>
                   <position>CB</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p171314.png" />
+               <image src="ruben-dias-pic" />
             </player>
             <player id="stones" team="man-city">
                <name>John Stones</name>
@@ -189,7 +246,7 @@
                <positions>
                   <position>CB</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p97299.png" />
+               <image src="stones-pic" />
             </player>
             <player id="gvardiol" team="man-city">
                <name>Josko Gvardiol</name>
@@ -199,7 +256,7 @@
                   <position>CB</position>
                   <position>LB</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p477424.png" />
+               <image src="gvardiol-pic" />
             </player>
             <player id="rodri" team="man-city">
                <name>Rodri</name>
@@ -209,7 +266,7 @@
                   <position>CDM</position>
                   <position>CM</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p220566.png" />
+               <image src="rodri-pic" />
             </player>
             <player id="de-bruyne" team="man-city">
                <name>Kevin De Bruyne</name>
@@ -218,7 +275,7 @@
                <positions>
                   <position>CAM</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p61366.png" />
+               <image src="de-bruyne-pic" />
             </player>
             <player id="foden" team="man-city">
                <name>Phil Foden</name>
@@ -228,7 +285,7 @@
                   <position>CAM</position>
                   <position>LW</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p209244.png" />
+               <image src="foden-pic" />
             </player>
             <player id="bernardo" team="man-city">
                <name>Bernardo Silva</name>
@@ -238,7 +295,7 @@
                   <position>CAM</position>
                   <position>RM</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p165809.png" />
+               <image src="bernardo-pic" />
             </player>
             <player id="gundogan" team="man-city">
                <name>Ilkay Gündogan</name>
@@ -247,7 +304,7 @@
                <positions>
                   <position>CM</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p59859.png" />
+               <image src="gundogan-pic" />
             </player>
             <player id="haaland" team="man-city">
                <name>Erling Haaland</name>
@@ -256,14 +313,14 @@
                <positions>
                   <position>ST</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p223094.png" />
+               <image src="haaland-pic" />
             </player>
          </players>
          <coach id="guardiola" team="man-city">
             <name>Pep Guardiola</name>
             <age>53</age>
             <nationality>Spain</nationality>
-            <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/man37974.png" />
+            <image src="guardiola-pic" />
          </coach>
          <logo src="man-city-logo" />
       </team>
@@ -285,7 +342,7 @@
                <positions>
                   <position>GK</position>
                </positions>
-               <image src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/250081721.jpg" />
+               <image src="inaki-pena-pic" />
             </player>
             <player id="kounde" team="barcelona">
                <name>Jules Koundé</name>
@@ -294,7 +351,7 @@
                <positions>
                   <position>CB</position>
                </positions>
-               <image src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/250096309.jpg" />
+               <image src="kounde-pic" />
             </player>
             <player id="christensen" team="barcelona">
                <name>Andreas Christensen</name>
@@ -303,7 +360,7 @@
                <positions>
                   <position>CB</position>
                </positions>
-               <image src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/250041718.jpg" />
+               <image src="christensen-pic" />
             </player>
             <player id="balde" team="barcelona">
                <name>Alejandro Balde</name>
@@ -312,7 +369,7 @@
                <positions>
                   <position>LB</position>
                </positions>
-               <image src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/250135416.jpg" />
+               <image src="balde-pic" />
             </player>
             <player id="de-jong" team="barcelona">
                <name>Frenkie de Jong</name>
@@ -321,7 +378,7 @@
                <positions>
                   <position>CM</position>
                </positions>
-               <image src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/50327423.jpg" />
+               <image src="de-jong-pic" />
             </player>
             <player id="pedri" team="barcelona">
                <name>Pedri</name>
@@ -331,7 +388,7 @@
                   <position>CM</position>
                   <position>CAM</position>
                </positions>
-               <image src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/250143693.jpg" />
+               <image src="pedri-pic" />
             </player>
             <player id="gavi" team="barcelona">
                <name>Gavi</name>
@@ -340,7 +397,7 @@
                <positions>
                   <position>CM</position>
                </positions>
-               <image src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/250139255.jpg" />
+               <image src="gavi-pic" />
             </player>
             <player id="olmo" team="barcelona">
                <name>Dani Olmo</name>
@@ -349,7 +406,7 @@
                <positions>
                   <position>CAM</position>
                </positions>
-               <image src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/250081720.jpg" />
+               <image src="olmo-pic" />
             </player>
             <player id="ferran-torres" team="barcelona">
                <name>Ferran Torres</name>
@@ -359,7 +416,7 @@
                   <position>RW</position>
                   <position>CF</position>
                </positions>
-               <image src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/250088320.jpg" />
+               <image src="ferran-torres-pic" />
             </player>
             <player id="lewandowski" team="barcelona">
                <name>Robert Lewandowski</name>
@@ -368,7 +425,7 @@
                <positions>
                   <position>ST</position>
                </positions>
-               <image src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/250002096.jpg" />
+               <image src="lewandowski-pic" />
             </player>
             <player id="raphinha" team="barcelona">
                <name>Raphinha</name>
@@ -378,7 +435,7 @@
                   <position>RW</position>
                   <position>CF</position>
                </positions>
-               <image src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/250112880.jpg" />
+               <image src="raphinha-pic" />
             </player>
             <player id="yamal" team="barcelona">
                <name>Lamine Yamal</name>
@@ -387,14 +444,14 @@
                <positions>
                   <position>RW</position>
                </positions>
-               <image src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/250176450.jpg" />
+               <image src="yamal-pic" />
             </player>
          </players>
-         <coach id="hansi-flick" team="man-city">
+         <coach id="hansi-flick" team="barcelona">
             <name>Hansi Flick</name>
             <age>59</age>
             <nationality>Germany</nationality>
-            <image src="https://img.uefa.com/imgml/TP/players/1/2025/75x75/250200261.jpg" />
+            <image src="hansi-flick-pic" />
          </coach>
          <logo src="barcelona-logo" />
       </team>
@@ -416,7 +473,7 @@
                <positions>
                   <position>GK</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p215059.png" />
+               <image src="sanchez-pic" />
             </player>
             <player id="cucurella" team="chelsea">
                <name>Marc Cucurella</name>
@@ -425,7 +482,7 @@
                <positions>
                   <position>LB</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p179268.png" />
+               <image src="cucurella-pic" />
             </player>
             <player id="james" team="chelsea">
                <name>Reece James</name>
@@ -434,7 +491,7 @@
                <positions>
                   <position>RB</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p225796.png" />
+               <image src="james-pic" />
             </player>
             <player id="colwill" team="chelsea">
                <name>Levi Colwill</name>
@@ -443,7 +500,7 @@
                <positions>
                   <position>CB</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p460028.png" />
+               <image src="colwill-pic" />
             </player>
             <player id="fofana" team="chelsea">
                <name>Wesley Fofana</name>
@@ -452,7 +509,7 @@
                <positions>
                   <position>CB</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p444463.png" />
+               <image src="fofana-pic" />
             </player>
             <player id="caicedo" team="chelsea">
                <name>Moisés Caicedo</name>
@@ -462,7 +519,7 @@
                   <position>CDM</position>
                   <position>CM</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p486672.png" />
+               <image src="caicedo-pic" />
             </player>
             <player id="nkunku" team="chelsea">
                <name>Christopher Nkunku</name>
@@ -472,7 +529,7 @@
                   <position>CAM</position>
                   <position>CF</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p213198.png" />
+               <image src="nkunku-pic" />
             </player>
             <player id="palmer" team="chelsea">
                <name>Cole Palmer</name>
@@ -482,7 +539,7 @@
                   <position>CAM</position>
                   <position>RW</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p244851.png" />
+               <image src="palmer-pic" />
             </player>
             <player id="enzo" team="chelsea">
                <name>Enzo Fernández</name>
@@ -491,7 +548,7 @@
                <positions>
                   <position>CM</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/250x250/p448047.png" />
+               <image src="enzo-pic" />
             </player>
             <player id="noni" team="chelsea">
                <name>Noni Madueke</name>
@@ -500,7 +557,7 @@
                <positions>
                   <position>RW</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p248857.png" />
+               <image src="noni-pic" />
             </player>
             <player id="pedro-neto" team="chelsea">
                <name>Pedro Neto</name>
@@ -510,7 +567,7 @@
                   <position>LW</position>
                   <position>RW</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p247632.png" />
+               <image src="pedro-neto-pic" />
             </player>
             <player id="jackson" team="chelsea">
                <name>Nicolas Jackson</name>
@@ -519,14 +576,14 @@
                <positions>
                   <position>ST</position>
                </positions>
-               <image src="https://resources.premierleague.com/premierleague/photos/players/40x40/p517052.png" />
+               <image src="jackson-pic" />
             </player>
          </players>
          <coach id="maresca" team="chelsea">
             <name>Enzo Maresca</name>
             <age>44</age>
             <nationality>Italy</nationality>
-            <image src="https://metro.co.uk/wp-content/uploads/2024/11/GettyImages-2181969385.jpg?quality=90&amp;strip=all&amp;w=646" />
+            <image src="maresca-pic" />
          </coach>
          <logo src="chelsea-logo" />
       </team>
@@ -535,7 +592,7 @@
       <competition id="la-liga">
          <name>La Liga</name>
          <country>Spain</country>
-         <logo src="laliga-logo" />
+         <logo src="la-liga-logo" />
       </competition>
       <competition id="champions-league">
          <name>UEFA Champions League</name>
