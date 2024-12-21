@@ -8,12 +8,15 @@
    <!ENTITY barcelona-logo PUBLIC "barcelona-logo-identifier" "https://img.uefa.com/imgml/TP/teams/logos/50x50/50080.png" NDATA png>
    <!ENTITY chelsea-logo PUBLIC "chelsea-logo-identifier" "https://img.uefa.com/imgml/TP/teams/logos/50x50/52914.png" NDATA png>
    <!ENTITY man-city-logo PUBLIC "man-city-logo-identifier" "https://img.uefa.com/imgml/TP/teams/logos/50x50/52919.png" NDATA png>
+   <!ENTITY real-madrid-logo PUBLIC "real-madrid-logo-identifier" "https://img.uefa.com/imgml/TP/teams/logos/240x240/50051.png" NDATA png>
+   <!ENTITY bayern-munich-logo PUBLIC "bayern-munich-logo-identifier" "https://img.uefa.com/imgml/TP/teams/logos/240x240/50037.png" NDATA png>
 
    <!ENTITY premier-league-logo PUBLIC "premier-league-logo-identifier" "https://www.premierleague.com/resources/rebrand/v7.153.31/i/elements/pl-main-logo.png" NDATA png>
    <!ENTITY la-liga-logo PUBLIC "la-liga-logo-identifier" "https://logos-world.net/wp-content/uploads/2023/07/LaLiga-Logo.jpg" NDATA jpg>
    <!ENTITY champions-league-logo PUBLIC "champions-league-logo-identifier" "https://clubcompetitions-shop.com/cdn/shop/files/UCL_logo_Active_3d0c3dc1-a5f3-4d8c-9fb3-751aea1427c3_1600x.png?v=1718717914" NDATA png>
    <!ENTITY conference-league-logo PUBLIC "conference-league-logo-identifier" "https://play-lh.googleusercontent.com/nWrxbKkGog67rL2MBswBdFUdZXYjjsA2y_eZFkD0wufs7_ImP-564xgJudsTffgiH-Lt" NDATA jpg>
    <!ENTITY europa-league-logo PUBLIC "europa-league-logo-identifier" "https://play-lh.googleusercontent.com/wEDc7PkgogH9nx9UfGIORcO5XNND8oPGnOyVujbdrMyVtbAr-G4K-er8Mbkrw5pIIA" NDATA jpg>
+   <!ENTITY bundesliga-logo PUBLIC "bundesliga-logo-identifier" "https://logowik.com/content/uploads/images/bundesliga7083.jpg" NDATA jpg>
 
    <!ENTITY andre-onana-pic PUBLIC "andre-onana-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p202641.png" NDATA png>
    <!ENTITY de-ligt-pic PUBLIC "de-ligt-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/p209365.png" NDATA png>
@@ -69,7 +72,38 @@
    <!ENTITY jackson-pic PUBLIC "jackson-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p517052.png" NDATA png>
    <!ENTITY maresca-pic PUBLIC "maresca-pic-identifier" "https://metro.co.uk/wp-content/uploads/2024/11/GettyImages-2181969385.jpg?quality=90&amp;strip=all&amp;w=646" NDATA jpg>
 
+   <!ENTITY courtois-pic PUBLIC "courtois-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250011668.jpg" NDATA jpg>
+   <!ENTITY carvajal-pic PUBLIC "carvajal-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250024448.jpg" NDATA jpg>
+   <!ENTITY militao-pic PUBLIC "militao-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250121965.jpg" NDATA jpg>
+   <!ENTITY rudiger-pic PUBLIC "rudiger-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250028211.jpg" NDATA jpg>
+   <!ENTITY alaba-pic PUBLIC "alaba-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/1906540.jpg" NDATA jpg>
+   <!ENTITY camavinga-pic PUBLIC "camavinga-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250128270.jpg" NDATA jpg>
+   <!ENTITY tchouameni-pic PUBLIC "tchouameni-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250105244.jpg" NDATA jpg>
+   <!ENTITY valverde-pic PUBLIC "valverde-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250101284.jpg" NDATA jpg>
+   <!ENTITY modric-pic PUBLIC "modric-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/74699.jpg" NDATA jpg>
+   <!ENTITY bellingham-pic PUBLIC "bellingham-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250128377.jpg" NDATA jpg>
+   <!ENTITY vini-jr-pic PUBLIC "vini-jr-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250121533.jpg" NDATA jpg>
+   <!ENTITY rodrygo-pic PUBLIC "rodrygo-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250132829.jpg" NDATA jpg>
+   <!ENTITY mbappe-pic PUBLIC "mbappe-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250076574.jpg" NDATA jpg>
+   <!ENTITY ancelotti-pic PUBLIC "ancelotti-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/75x75/43192.jpg" NDATA jpg>
+
+   <!ENTITY neuer-pic PUBLIC "neuer-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/97923.jpg" NDATA jpg>
+   <!ENTITY upamecano-pic PUBLIC "upamecano-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250079545.jpg" NDATA jpg>
+   <!ENTITY kim-minjae-pic PUBLIC "kim-minjae-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250162325.jpg" NDATA jpg>
+   <!ENTITY dier-pic PUBLIC "dier-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250050416.jpg" NDATA jpg>
+   <!ENTITY guerreiro-pic PUBLIC "guerreiro-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250066156.jpg" NDATA jpg>
+   <!ENTITY kimmich-pic PUBLIC "kimmich-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250070417.jpg" NDATA jpg>
+   <!ENTITY alphonso-pic PUBLIC "alphonso-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250128120.jpg" NDATA jpg>
+   <!ENTITY goretzka-pic PUBLIC "goretzka-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250041771.jpg" NDATA jpg>
+   <!ENTITY olise-pic PUBLIC "olise-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250171184.jpg" NDATA jpg>
+   <!ENTITY musiala-pic PUBLIC "musiala-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250124430.jpg" NDATA jpg>
+   <!ENTITY leroy-pic PUBLIC "leroy-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250063984.jpg" NDATA jpg>
+   <!ENTITY gnabry-pic PUBLIC "gnabry-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250041770.jpg" NDATA jpg>
+   <!ENTITY coman-pic PUBLIC "coman-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250054949.jpg" NDATA jpg>
+   <!ENTITY kane-pic PUBLIC "kane-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250016833.jpg" NDATA jpg>
+   <!ENTITY kompany-pic PUBLIC "kompany-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/75x75/71507.jpg" NDATA jpg>
 ]>
+
 <catalogue xmlns="http://www.example.com/football" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.com/football schema.xsd">
    <teams>
       <team id="man-utd">
@@ -586,6 +620,305 @@
             <image src="maresca-pic" />
          </coach>
          <logo src="chelsea-logo" />
+      </team>
+      <team id="real-madrid">
+         <name>Real Madrid</name>
+         <country>Spain</country>
+         <city>Madrid</city>
+         <stadium>Santiago Bernabeu</stadium>
+         <founded>1902</founded>
+         <competitions>
+            <competition ref="la-liga" />
+            <competition ref="champions-league" />
+         </competitions>
+         <players>
+            <player id="courtois" team="real-madrid">
+               <name>Thibaut Courtois</name>
+               <age>32</age>
+               <nationality>Belgium</nationality>
+               <positions>
+                  <position>GK</position>
+               </positions>
+               <image src="courtois-pic" />
+            </player>
+            <player id="carvajal" team="real-madrid">
+               <name>Dani Carvajal</name>
+               <age>32</age>
+               <nationality>Spain</nationality>
+               <positions>
+                  <position>RB</position>
+                  <position>RWB</position>
+               </positions>
+               <image src="carvajal-pic" />
+            </player>
+            <player id="militao" team="real-madrid">
+               <name>Eder Militao</name>
+               <age>26</age>
+               <nationality>Brazil</nationality>
+               <positions>
+                  <position>CB</position>
+               </positions>
+               <image src="militao-pic" />
+            </player>
+            <player id="rudiger" team="real-madrid">
+               <name>Antonio Rudiger</name>
+               <age>31</age>
+               <nationality>Germany</nationality>
+               <positions>
+                  <position>CB</position>
+               </positions>
+               <image src="rudiger-pic" />
+            </player>
+            <player id="alaba" team="real-madrid">
+               <name>David Alaba</name>
+               <age>32</age>
+               <nationality>Austria</nationality>
+               <positions>
+                  <position>CB</position>
+                  <position>LB</position>
+               </positions>
+               <image src="alaba-pic" />
+            </player>
+            <player id="camavinga" team="real-madrid">
+               <name>Eduardo Camavinga</name>
+               <age>22</age>
+               <nationality>France</nationality>
+               <positions>
+                  <position>CDM</position>
+                  <position>CM</position>
+               </positions>
+               <image src="camavinga-pic" />
+            </player>
+            <player id="tchouameni" team="real-madrid">
+               <name>Aurelien Tchouameni</name>
+               <age>24</age>
+               <nationality>France</nationality>
+               <positions>
+                  <position>CDM</position>
+                  <position>CM</position>
+               </positions>
+               <image src="tchouameni-pic" />
+            </player>
+            <player id="valverde" team="real-madrid">
+               <name>Federico Valverde</name>
+               <age>26</age>
+               <nationality>Uruguay</nationality>
+               <positions>
+                  <position>CM</position>
+               </positions>
+               <image src="valverde-pic" />
+            </player>
+            <player id="modric" team="real-madrid">
+               <name>Luka Modric</name>
+               <age>39</age>
+               <nationality>Croatia</nationality>
+               <positions>
+                  <position>CM</position>
+               </positions>
+               <image src="modric-pic" />
+            </player>
+            <player id="bellingham" team="real-madrid">
+               <name>Jude Bellingham</name>
+               <age>21</age>
+               <nationality>England</nationality>
+               <positions>
+                  <position>CAM</position>
+                  <position>LM</position>
+                  <position>CF</position>
+               </positions>
+               <image src="bellingham-pic" />
+            </player>
+            <player id="vini-jr" team="real-madrid">
+               <name>Vinicius Junior</name>
+               <age>24</age>
+               <nationality>Brazil</nationality>
+               <positions>
+                  <position>LW</position>
+               </positions>
+               <image src="vini-jr-pic" />
+            </player>
+            <player id="rodrygo" team="real-madrid">
+               <name>Rodrygo</name>
+               <age>23</age>
+               <nationality>Brazil</nationality>
+               <positions>
+                  <position>RW</position>
+               </positions>
+               <image src="rodrygo-pic" />
+            </player>
+            <player id="mbappe" team="real-madrid">
+               <name>Kylian Mbappe</name>
+               <age>26</age>
+               <nationality>France</nationality>
+               <positions>
+                  <position>ST</position>
+                  <position>LW</position>
+               </positions>
+               <image src="mbappe-pic" />
+            </player>
+         </players>
+         <coach id="ancelotti" team="real-madrid">
+            <name>Carlo Ancelotti</name>
+            <age>65</age>
+            <nationality>Italy</nationality>
+            <image src="ancelotti-pic" />
+         </coach>
+         <logo src="real-madrid-logo" />
+      </team>
+      <team id="bayern-munich">
+         <name>Bayern Munich</name>
+         <country>Germany</country>
+         <city>Munich</city>
+         <stadium>Allianz Arena</stadium>
+         <founded>1900</founded>
+         <competitions>
+            <competition ref="bundesliga" />
+            <competition ref="champions-league" />
+         </competitions>
+         <players>
+            <player id="neuer" team="bayern-munich">
+               <name>Manuel Neuer</name>
+               <age>38</age>
+               <nationality>Germany</nationality>
+               <positions>
+                  <position>GK</position>
+               </positions>
+               <image src="neuer-pic" />
+            </player>
+            <player id="upamecano" team="bayern-munich">
+               <name>Dayot Upamecano</name>
+               <age>26</age>
+               <nationality>France</nationality>
+               <positions>
+                  <position>CB</position>
+               </positions>
+               <image src="upamecano-pic" />
+            </player>
+            <player id="kim-minjae" team="bayern-munich">
+               <name>Minjae Kim</name>
+               <age>28</age>
+               <nationality>South Korea</nationality>
+               <positions>
+                  <position>CB</position>
+               </positions>
+               <image src="kim-minjae-pic" />
+            </player>
+            <player id="dier" team="bayern-munich">
+               <name>Eric Dier</name>
+               <age>30</age>
+               <nationality>England</nationality>
+               <positions>
+                  <position>CB</position>
+               </positions>
+               <image src="dier-pic" />
+            </player>
+            <player id="guerreiro" team="bayern-munich">
+               <name>Raphaël Guerreiro</name>
+               <age>30</age>
+               <nationality>Portugal</nationality>
+               <positions>
+                  <position>LB</position>
+                  <position>LWB</position>
+               </positions>
+               <image src="guerreiro-pic" />
+            </player>
+            <player id="kimmich" team="bayern-munich">
+               <name>Joshua Kimmich</name>
+               <age>29</age>
+               <nationality>France</nationality>
+               <positions>
+                  <position>RB</position>
+                  <position>CDM</position>
+                  <position>CM</position>
+               </positions>
+               <image src="kimmich-pic" />
+            </player>
+            <player id="alphonso" team="bayern-munich">
+               <name>Alphonso Davies</name>
+               <age>24</age>
+               <nationality>Canada</nationality>
+               <positions>
+                  <position>LB</position>
+                  <position>LWB</position>
+                  <position>LM</position>
+               </positions>
+               <image src="alphonso-pic" />
+            </player>
+            <player id="goretzka" team="bayern-munich">
+               <name>Leon Goretzka</name>
+               <age>29</age>
+               <nationality>Germany</nationality>
+               <positions>
+                  <position>CM</position>
+               </positions>
+               <image src="goretzka-pic" />
+            </player>
+            <player id="olise" team="bayern-munich">
+               <name>Michael Olise</name>
+               <age>23</age>
+               <nationality>France</nationality>
+               <positions>
+                  <position>CAM</position>
+                  <position>LM</position>
+               </positions>
+               <image src="olise-pic" />
+            </player>
+            <player id="musiala" team="bayern-munich">
+               <name>Jamal Musiala</name>
+               <age>21</age>
+               <nationality>Germany</nationality>
+               <positions>
+                  <position>CAM</position>
+               </positions>
+               <image src="musiala-pic" />
+            </player>
+            <player id="leroy" team="bayern-munich">
+               <name>Leroy Sané</name>
+               <age>28</age>
+               <nationality>Germany</nationality>
+               <positions>
+                  <position>LM</position>
+                  <position>RM</position>
+               </positions>
+               <image src="leroy-pic" />
+            </player>
+            <player id="gnabry" team="bayern-munich">
+               <name>Serge Gnabry</name>
+               <age>29</age>
+               <nationality>Germany</nationality>
+               <positions>
+                  <position>LM</position>
+                  <position>RM</position>
+               </positions>
+               <image src="gnabry-pic" />
+            </player>
+            <player id="coman" team="bayern-munich">
+               <name>Kingsley Coman</name>
+               <age>29</age>
+               <nationality>France</nationality>
+               <positions>
+                  <position>LM</position>
+                  <position>RM</position>
+               </positions>
+               <image src="coman-pic" />
+            </player>
+            <player id="kane" team="bayern-munich">
+               <name>Harry Kane</name>
+               <age>31</age>
+               <nationality>England</nationality>
+               <positions>
+                  <position>ST</position>
+               </positions>
+               <image src="kane-pic" />
+            </player>
+         </players>
+         <coach id="kompany" team="bayern-munich">
+            <name>Vincent Kompany</name>
+            <age>38</age>
+            <nationality>Belgium</nationality>
+            <image src="kompany-pic" />
+         </coach>
+         <logo src="bayern-munich-logo" />
       </team>
    </teams>
    <competitions>
