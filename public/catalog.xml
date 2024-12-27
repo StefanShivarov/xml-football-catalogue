@@ -10,6 +10,7 @@
    <!ENTITY man-city-logo PUBLIC "man-city-logo-identifier" "https://img.uefa.com/imgml/TP/teams/logos/50x50/52919.png" NDATA png>
    <!ENTITY real-madrid-logo PUBLIC "real-madrid-logo-identifier" "https://img.uefa.com/imgml/TP/teams/logos/240x240/50051.png" NDATA png>
    <!ENTITY bayern-munich-logo PUBLIC "bayern-munich-logo-identifier" "https://img.uefa.com/imgml/TP/teams/logos/240x240/50037.png" NDATA png>
+   <!ENTITY liverpool-logo PUBLIC "liverpool-logo-identifier" "https://resources.premierleague.com/premierleague/badges/50/t14.png" NDATA png>
 
    <!ENTITY premier-league-logo PUBLIC "premier-league-logo-identifier" "https://www.premierleague.com/resources/rebrand/v7.153.31/i/elements/pl-main-logo.png" NDATA png>
    <!ENTITY la-liga-logo PUBLIC "la-liga-logo-identifier" "https://logos-world.net/wp-content/uploads/2023/07/LaLiga-Logo.jpg" NDATA jpg>
@@ -102,6 +103,24 @@
    <!ENTITY coman-pic PUBLIC "coman-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250054949.jpg" NDATA jpg>
    <!ENTITY kane-pic PUBLIC "kane-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/324x324/250016833.jpg" NDATA jpg>
    <!ENTITY kompany-pic PUBLIC "kompany-pic-identifier" "https://img.uefa.com/imgml/TP/players/1/2025/75x75/71507.jpg" NDATA jpg>
+
+   <!ENTITY alisson-pic  PUBLIC "alisson-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p116535.png" NDATA png>
+   <!ENTITY joe-gomez-pic PUBLIC "joe-gomez-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p171287.png" NDATA png>
+   <!ENTITY van-dijk-pic PUBLIC "van-dijk-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p97032.png" NDATA png>
+   <!ENTITY konate-pic PUBLIC "konate-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p204716.png" NDATA png>
+   <!ENTITY robertson-pic PUBLIC "robertson-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p122798.png" NDATA png>
+   <!ENTITY trent-pic PUBLIC "trent-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p169187.png" NDATA png>
+   <!ENTITY szoboszlai-pic PUBLIC "szoboszlai-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p424876.png" NDATA png>
+   <!ENTITY macallister-pic PUBLIC "macallister-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p243016.png" NDATA png>
+   <!ENTITY gravenberch-pic PUBLIC "gravenberch-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p441266.png" NDATA png>
+   <!ENTITY curtis-pic PUBLIC "curtis-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p206915.png" NDATA png>
+   <!ENTITY diaz-pic PUBLIC "diaz-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p244731.png" NDATA png>
+   <!ENTITY nunez-pic PUBLIC "nunez-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p447203.png" NDATA png>
+   <!ENTITY gakpo-pic PUBLIC "gakpo-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p243298.png" NDATA png>
+   <!ENTITY salah-pic PUBLIC "salah-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p118748.png" NDATA png>
+   <!ENTITY jota-pic PUBLIC "jota-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p194634.png" NDATA png>
+   <!ENTITY arne-slot-pic PUBLIC "arne-slot-pic-identifier" "https://d3et0fncpz2hhr.cloudfront.net/_550x776_fit_center-center_80_none/Arne-Slot-03-copy.png" NDATA png>
+
 ]>
 
 <catalogue xmlns="http://www.example.com/football" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.com/football schema.xsd">
@@ -919,6 +938,167 @@
             <image src="kompany-pic" />
          </coach>
          <logo src="bayern-munich-logo" />
+      </team>
+      <team id="liverpool">
+         <name>Liverpool</name>
+         <country>England</country>
+         <city>Liverpool</city>
+         <stadium>Anfield</stadium>
+         <founded>1892</founded>
+         <competitions>
+            <competition ref="premier-league" />
+            <competition ref="champions-league" />
+         </competitions>
+         <players>
+            <player id="alisson" team="liverpool">
+               <name>Alisson Becker</name>
+               <age>32</age>
+               <nationality>Brazil</nationality>
+               <positions>
+                  <position>GK</position>
+               </positions>
+               <image src="alisson-pic" />
+            </player>
+            <player id="joe-gomez" team="liverpool">
+               <name>Joe Gomez</name>
+               <age>27</age>
+               <nationality>England</nationality>
+               <positions>
+                  <position>CB</position>
+                  <position>RB</position>
+               </positions>
+               <image src="joe-gomez-pic" />
+            </player>
+            <player id="van-dijk" team="liverpool">
+               <name>Virgil van Dijk</name>
+               <age>33</age>
+               <nationality>Netherlands</nationality>
+               <positions>
+                  <position>CB</position>
+               </positions>
+               <image src="van-dijk-pic" />
+            </player>
+            <player id="konate" team="liverpool">
+               <name>Ibrahima Konaté</name>
+               <age>25</age>
+               <nationality>France</nationality>
+               <positions>
+                  <position>CB</position>
+               </positions>
+               <image src="konate-pic" />
+            </player>
+            <player id="robertson" team="liverpool">
+               <name>Andy Robertson</name>
+               <age>30</age>
+               <nationality>Scotland</nationality>
+               <positions>
+                  <position>LB</position>
+               </positions>
+               <image src="robertson-pic" />
+            </player>
+            <player id="trent" team="liverpool">
+               <name>Trent Alexander-Arnold</name>
+               <age>26</age>
+               <nationality>England</nationality>
+               <positions>
+                  <position>RB</position>
+                  <position>RM</position>
+                  <position>CM</position>
+               </positions>
+               <image src="trent-pic" />
+            </player>
+            <player id="macallister" team="liverpool">
+               <name>Alexis Mac Allister</name>
+               <age>26</age>
+               <nationality>Argentina</nationality>
+               <positions>
+                  <position>CM</position>
+               </positions>
+               <image src="macallister-pic" />
+            </player>
+            <player id="gravenberch" team="liverpool">
+               <name>Ryan Gravenberch</name>
+               <age>22</age>
+               <nationality>Netherlands</nationality>
+               <positions>
+                  <position>CM</position>
+               </positions>
+               <image src="gravenberch-pic" />
+            </player>
+            <player id="curtis" team="liverpool">
+               <name>Curtis Jones</name>
+               <age>23</age>
+               <nationality>England</nationality>
+               <positions>
+                  <position>CM</position>
+               </positions>
+               <image src="curtis-pic" />
+            </player>
+            <player id="szoboszlai" team="liverpool">
+               <name>Dominik Szoboszlai</name>
+               <age>24</age>
+               <nationality>Hungary</nationality>
+               <positions>
+                  <position>CAM</position>
+               </positions>
+               <image src="szoboszlai-pic" />
+            </player>
+            <player id="diaz" team="liverpool">
+               <name>Luis Díaz</name>
+               <age>27</age>
+               <nationality>Colombia</nationality>
+               <positions>
+                  <position>LW</position>
+               </positions>
+               <image src="diaz-pic" />
+            </player>
+            <player id="nunez" team="liverpool">
+               <name>Darwin Núñez</name>
+               <age>25</age>
+               <nationality>Uruguay</nationality>
+               <positions>
+                  <position>ST</position>
+               </positions>
+               <image src="nunez-pic" />
+            </player>
+            <player id="gakpo" team="liverpool">
+               <name>Cody Gakpo</name>
+               <age>25</age>
+               <nationality>Netherlands</nationality>
+               <positions>
+                  <position>LW</position>
+                  <position>ST</position>
+               </positions>
+               <image src="gakpo-pic" />
+            </player>
+            <player id="salah" team="liverpool">
+               <name>Mohamed Salah</name>
+               <age>32</age>
+               <nationality>Egypt</nationality>
+               <positions>
+                  <position>RW</position>
+                  <position>CF</position>
+               </positions>
+               <image src="salah-pic" />
+            </player>
+            <player id="jota" team="liverpool">
+               <name>Diogo Jota</name>
+               <age>28</age>
+               <nationality>Portugal</nationality>
+               <positions>
+                  <position>LW</position>
+                  <position>CF</position>
+               </positions>
+               <image src="jota-pic" />
+            </player>
+         </players>
+         <coach id="arne-slot" team="liverpool">
+            <name>Arne Slot</name>
+            <age>46</age>
+            <nationality>Netherlands</nationality>
+            <image src="arne-slot-pic" />
+         </coach>
+         <logo src="liverpool-logo" />
       </team>
    </teams>
    <competitions>
