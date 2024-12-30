@@ -11,6 +11,7 @@
    <!ENTITY real-madrid-logo PUBLIC "real-madrid-logo-identifier" "https://img.uefa.com/imgml/TP/teams/logos/240x240/50051.png" NDATA png>
    <!ENTITY bayern-munich-logo PUBLIC "bayern-munich-logo-identifier" "https://img.uefa.com/imgml/TP/teams/logos/240x240/50037.png" NDATA png>
    <!ENTITY liverpool-logo PUBLIC "liverpool-logo-identifier" "https://resources.premierleague.com/premierleague/badges/50/t14.png" NDATA png>
+   <!ENTITY arsenal-logo PUBLIC "arsenal-logo-identifier" "https://resources.premierleague.com/premierleague/badges/100/t3.png" NDATA png>
 
    <!ENTITY premier-league-logo PUBLIC "premier-league-logo-identifier" "https://www.premierleague.com/resources/rebrand/v7.153.31/i/elements/pl-main-logo.png" NDATA png>
    <!ENTITY la-liga-logo PUBLIC "la-liga-logo-identifier" "https://logos-world.net/wp-content/uploads/2023/07/LaLiga-Logo.jpg" NDATA jpg>
@@ -121,6 +122,22 @@
    <!ENTITY jota-pic PUBLIC "jota-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p194634.png" NDATA png>
    <!ENTITY arne-slot-pic PUBLIC "arne-slot-pic-identifier" "https://d3et0fncpz2hhr.cloudfront.net/_550x776_fit_center-center_80_none/Arne-Slot-03-copy.png" NDATA png>
 
+   <!ENTITY raya-pic PUBLIC "raya-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p154561.png" NDATA png>
+   <!ENTITY saliba-pic PUBLIC "saliba-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p462424.png" NDATA png>
+   <!ENTITY gabriel-pic PUBLIC "gabriel-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p226597.png" NDATA png>
+   <!ENTITY calafiori-pic PUBLIC "calafiori-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p466075.png" NDATA png>
+   <!ENTITY white-pic PUBLIC "white-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p198869.png" NDATA png>
+   <!ENTITY timber-pic PUBLIC "timber-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p445122.png" NDATA png>
+   <!ENTITY partey-pic PUBLIC "partey-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p167199.png" NDATA png>
+   <!ENTITY rice-pic PUBLIC "rice-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p204480.png" NDATA png>
+   <!ENTITY jorginho-pic PUBLIC "jorginho-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p85955.png" NDATA png>
+   <!ENTITY martinelli-pic PUBLIC "martinelli-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p444145.png" NDATA png>
+   <!ENTITY trossard-pic PUBLIC "trossard-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p116216.png" NDATA png>
+   <!ENTITY saka-pic PUBLIC "saka-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p223340.png" NDATA png>
+   <!ENTITY sterling-pic PUBLIC "sterling-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p103955.png" NDATA png>
+   <!ENTITY havertz-pic PUBLIC "havertz-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p219847.png" NDATA png>
+   <!ENTITY jesus-pic PUBLIC "jesus-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/40x40/p205651.png" NDATA png>
+   <!ENTITY arteta-pic PUBLIC "arteta-pic-identifier" "https://resources.premierleague.com/premierleague/photos/players/250x250/man51018.png" NDATA png>
 ]>
 
 <catalogue xmlns="http://www.example.com/football" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.com/football schema.xsd">
@@ -1099,6 +1116,168 @@
             <image src="arne-slot-pic" />
          </coach>
          <logo src="liverpool-logo" />
+      </team>
+      <team id="arsenal">
+         <name>Arsenal</name>
+         <country>England</country>
+         <city>London</city>
+         <stadium>Emirates Stadium</stadium>
+         <founded>1886</founded>
+         <competitions>
+            <competition ref="premier-league" />
+            <competition ref="champions-league" />
+         </competitions>
+         <players>
+            <player id="raya" team="arsenal">
+               <name>David Raya</name>
+               <age>29</age>
+               <nationality>Spain</nationality>
+               <positions>
+                  <position>GK</position>
+               </positions>
+               <image src="raya-pic" />
+            </player>
+            <player id="saliba" team="arsenal">
+               <name>William Saliba</name>
+               <age>23</age>
+               <nationality>France</nationality>
+               <positions>
+                  <position>CB</position>
+               </positions>
+               <image src="saliba-pic" />
+            </player>
+            <player id="gabriel" team="arsenal">
+               <name>Gabriel Magalhães</name>
+               <age>27</age>
+               <nationality>Brazil</nationality>
+               <positions>
+                  <position>CB</position>
+               </positions>
+               <image src="gabriel-pic" />
+            </player>
+            <player id="calafiori" team="arsenal">
+               <name>Riccardo Calafiori</name>
+               <age>22</age>
+               <nationality>Italy</nationality>
+               <positions>
+                  <position>LB</position>
+               </positions>
+               <image src="calafiori-pic" />
+            </player>
+            <player id="white" team="arsenal">
+               <name>Ben White</name>
+               <age>27</age>
+               <nationality>England</nationality>
+               <positions>
+                  <position>RB</position>
+                  <position>CB</position>
+               </positions>
+               <image src="white-pic" />
+            </player>
+            <player id="timber" team="arsenal">
+               <name>Jurrien Timber</name>
+               <age>23</age>
+               <nationality>Netherlands</nationality>
+               <positions>
+                  <position>RB</position>
+                  <position>CB</position>
+               </positions>
+               <image src="timber-pic" />
+            </player>
+            <player id="partey" team="arsenal">
+               <name>Thomas Partey</name>
+               <age>31</age>
+               <nationality>Ghana</nationality>
+               <positions>
+                  <position>CDM</position>
+                  <position>CM</position>
+               </positions>
+               <image src="partey-pic" />
+            </player>
+            <player id="rice" team="arsenal">
+               <name>Declan Rice</name>
+               <age>25</age>
+               <nationality>England</nationality>
+               <positions>
+                  <position>CDM</position>
+                  <position>CM</position>
+               </positions>
+               <image src="rice-pic" />
+            </player>
+            <player id="jorginho" team="arsenal">
+               <name>Jorginho</name>
+               <age>33</age>
+               <nationality>Italy</nationality>
+               <positions>
+                  <position>CM</position>
+               </positions>
+               <image src="jorginho-pic" />
+            </player>
+            <player id="martinelli" team="arsenal">
+               <name>Gabriel Martinelli</name>
+               <age>23</age>
+               <nationality>Brazil</nationality>
+               <positions>
+                  <position>LM</position>
+               </positions>
+               <image src="martinelli-pic" />
+            </player>
+            <player id="trossard" team="arsenal">
+               <name>Leandro Trossard</name>
+               <age>30</age>
+               <nationality>Belgium</nationality>
+               <positions>
+                  <position>LW</position>
+               </positions>
+               <image src="trossard-pic" />
+            </player>
+            <player id="saka" team="arsenal">
+               <name>Bukayo Saka</name>
+               <age>23</age>
+               <nationality>England</nationality>
+               <positions>
+                  <position>RW</position>
+               </positions>
+               <image src="saka-pic" />
+            </player>
+            <player id="sterling" team="arsenal">
+               <name>Raheem Sterling</name>
+               <age>30</age>
+               <nationality>England</nationality>
+               <positions>
+                  <position>RW</position>
+                  <position>LW</position>
+               </positions>
+               <image src="sterling-pic" />
+            </player>
+            <player id="havertz" team="arsenal">
+               <name>Kai Havertz</name>
+               <age>25</age>
+               <nationality>Germany</nationality>
+               <positions>
+                  <position>CAM</position>
+                  <position>CF</position>
+                  <position>ST</position>
+               </positions>
+               <image src="havertz-pic" />
+            </player>
+            <player id="jesus" team="arsenal">
+               <name>Gabriel Jesus</name>
+               <age>27</age>
+               <nationality>Egypt</nationality>
+               <positions>
+                  <position>ST</position>
+               </positions>
+               <image src="jesus-pic" />
+            </player>
+         </players>
+         <coach id="arteta" team="arsenal">
+            <name>Mikel Arteta</name>
+            <age>42</age>
+            <nationality>Spain</nationality>
+            <image src="arteta-pic" />
+         </coach>
+         <logo src="arsenal-logo" />
       </team>
    </teams>
    <competitions>
