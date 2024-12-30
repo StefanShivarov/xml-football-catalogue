@@ -5,7 +5,7 @@
    <xsl:template match="/fb:catalogue">
       <html class="dark">
          <head>
-            <title>Football Teams</title>
+            <title>Football Teams Catalogue</title>
             <script src="https://cdn.tailwindcss.com" />
             <style>
                @keyframes gradient-move {
@@ -67,10 +67,10 @@
          </head>
          <body class="font-sans text-gray-300 bg-gradient-to-b from-black to-gray-900">
             <div class="container mx-auto p-6">
-               <h1 class="text-5xl font-extrabold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">Football Teams</h1>
+               <h1 class="text-4xl font-extrabold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500">Football Teams Catalogue</h1>
                <div class="text-center mb-8">
                   <button id="asc-btn" onclick="sortTeamsByName('asc')" class="px-8 py-4 rounded-full bg-gradient-to-br from-gray-900 via-gray-800 to-black mr-3 text-white font-semibold tracking-wider uppercase border border-gray-700 shadow-[inset_0_-2px_6px_rgba(0,0,0,0.7),_0_2px_8px_rgba(255,255,255,0.1)] hover:shadow-[0_0_15px_2px_rgba(0,100,200,0.5)] hover:border-blue-500 transition-all duration-300 ease-in-out">Sort by team name A-Z</button>
-                  <button id="desc-btn" onclick="sortTeamsByName('desc')" class="px-8 py-4 rounded-full bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white font-semibold tracking-wider uppercase border border-gray-700 shadow-[inset_0_-2px_6px_rgba(0,0,0,0.7),_0_2px_8px_rgba(255,255,255,0.1)] hover:shadow-[0_0_15px_2px_rgba(0,100,200,0.5)] hover:border-blue-500 transition-all duration-300 ease-in-out">Sort by team name Z-A</button>
+                  <button id="desc-btn" onclick="sortTeamsByName('desc')" class="px-8 py-4 rounded-full bg-gradient-to-br from-gray-900 via-gray-800 to-black mr-3 text-white font-semibold tracking-wider uppercase border border-gray-700 shadow-[inset_0_-2px_6px_rgba(0,0,0,0.7),_0_2px_8px_rgba(255,255,255,0.1)] hover:shadow-[0_0_15px_2px_rgba(0,100,200,0.5)] hover:border-blue-500 transition-all duration-300 ease-in-out">Sort by team name Z-A</button>
                   <button id="sort-by-comp-btn" onclick="sortTeamsByDomesticCompetition()" class="px-8 py-4 rounded-full bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white font-semibold tracking-wider uppercase border border-gray-700 shadow-[inset_0_-2px_6px_rgba(0,0,0,0.7),_0_2px_8px_rgba(255,255,255,0.1)] hover:shadow-[0_0_15px_2px_rgba(0,100,200,0.5)] hover:border-blue-500 transition-all duration-300 ease-in-out">Sort by domestic competition</button>
                </div>
                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8" id="teams-container">
@@ -85,7 +85,7 @@
       <div class="bg-gray-800 rounded-lg shadow-lg p-6 transform transition relative">
          <div class="flex items-start gap-6 mb-4">
             <div class="relative">
-               <div class="w-20 h-20 rounded-full bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 animate-gradient-move p-1">
+               <div class="w-20 h-20 rounded-full bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500 animate-gradient-move p-1">
                   <img class="w-full h-full rounded-full" alt="Team Logo">
                      <xsl:attribute name="src">
                         <xsl:choose>
@@ -193,7 +193,7 @@
    
    <xsl:template match="fb:coach">
       <div class="flex items-center gap-3">
-         <img class="w-10 h-10 rounded-full object-cover" alt="Coach Image" >
+         <img class="w-10 h-10 rounded-full border-2 border-purple-500 object-cover" alt="Coach Image" >
             <xsl:attribute name="src">
             <xsl:choose>
                <xsl:when test="fb:image/@src">
