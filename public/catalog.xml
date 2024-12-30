@@ -149,8 +149,8 @@
          <stadium>Old Trafford</stadium>
          <founded>1878</founded>
          <competitions>
-            <competition ref="europa-league" />
             <competition ref="premier-league" />
+            <competition ref="europa-league" />
          </competitions>
          <players>
             <player id="andre-onana" team="man-utd">
