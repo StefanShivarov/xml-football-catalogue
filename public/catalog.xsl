@@ -109,6 +109,10 @@
                   | Founded:
                   <xsl:value-of select="fb:founded" />
                </p>
+               <p class="text-sm text-gray-400">
+                  Stadium: 
+                  <xsl:value-of select="fb:stadium" />
+               </p>
             </div>
          </div>
          <div class="absolute top-4 right-4 bg-black text-white text-xs font-bold rounded-full px-3 py-1 shadow-md">Coach</div>
@@ -171,6 +175,11 @@
             <p class="text-sm font-medium text-white leading-none mb-1">
                <xsl:value-of select="fb:name" />
             </p>
+            <p class="text-xs text-gray-400 mb-1">
+               <xsl:value-of select="fb:nationality" />
+                 | Age: 
+                  <xsl:value-of select="fb:age" />
+            </p>
             <p class="text-xs text-gray-400">
                <xsl:for-each select="fb:positions/fb:position">
                   <span class="inline-block px-2 py-0.5 mr-1 bg-gradient-to-r from-purple-500 to-blue-500 text-xs text-white rounded-md">
@@ -199,8 +208,9 @@
                <xsl:value-of select="fb:name" />
             </p>
             <p class="text-xs text-gray-400">
-               Nationality:
                <xsl:value-of select="fb:nationality" />
+               | Age: 
+               <xsl:value-of select="fb:age" />
             </p>
          </div>
       </div>
