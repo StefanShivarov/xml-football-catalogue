@@ -20,34 +20,48 @@
                }
             </style>
             <script>
-            function sortTeams(order) {
-                  const teamsContainer = document.getElementById('teams-container');
+               function sortTeamsByName(order) {
+                  const teamsContainer = document.getElementById("teams-container");
                   const teams = Array.from(teamsContainer.children);
                   teams.sort((a, b) => {
-                     const nameA = a.querySelector('h2').textContent.toLowerCase();
-                     const nameB = b.querySelector('h2').textContent.toLowerCase();
-                     if (order === 'asc') {
+                     const nameA = a.querySelector("h2").textContent.toLowerCase();
+                     const nameB = b.querySelector("h2").textContent.toLowerCase();
+                     if (order === "asc") {
                         return nameA.localeCompare(nameB);
                      } else {
                         return nameB.localeCompare(nameA);
                      }
                   });
-                  teams.forEach(team => teamsContainer.appendChild(team));
+                  teams.forEach((team) => teamsContainer.appendChild(team));
 
-                  const ascButton = document.getElementById('asc-btn');
-                  const descButton = document.getElementById('desc-btn');
-    
-                  if (order === 'asc') {
-                     ascButton.classList.add('border-blue-500');
-                     ascButton.classList.remove('border-gray-700');
-                     descButton.classList.remove('border-blue-500');
-                     descButton.classList.add('border-gray-700');
+                  const ascButton = document.getElementById("asc-btn");
+                  const descButton = document.getElementById("desc-btn");
+
+                  if (order === "asc") {
+                     ascButton.classList.add("border-blue-500");
+                     ascButton.classList.remove("border-gray-700");
+                     descButton.classList.remove("border-blue-500");
+                     descButton.classList.add("border-gray-700");
                   } else {
-                     descButton.classList.add('border-blue-500');
-                     descButton.classList.remove('border-gray-700');
-                     ascButton.classList.remove('border-blue-500');
-                     ascButton.classList.add('border-gray-700');
+                     descButton.classList.add("border-blue-500");
+                     descButton.classList.remove("border-gray-700");
+                     ascButton.classList.remove("border-blue-500");
+                     ascButton.classList.add("border-gray-700");
                   }
+               }
+
+               function sortTeamsByDomesticCompetition() {
+                  console.log("clicked");
+                  const teamsContainer = document.getElementById("teams-container");
+                  console.log(teamsContainer);
+                  const teams = Array.from(teamsContainer.children);
+                  console.log(teams);
+                  teams.sort((a, b) => {
+                     const compA = a.querySelector(".comp-name").textContent.toLowerCase();
+                     const compB = b.querySelector(".comp-name").textContent.toLowerCase();
+                     return compA.localeCompare(compB);
+                  });
+                  teams.forEach((team) => teamsContainer.appendChild(team));
                }
             </script>
          </head>
@@ -55,8 +69,9 @@
             <div class="container mx-auto p-6">
                <h1 class="text-5xl font-extrabold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">Football Teams</h1>
                <div class="text-center mb-8">
-                  <button id="asc-btn" onclick="sortTeams('asc')" class="px-8 py-4 rounded-full bg-gradient-to-br from-gray-900 via-gray-800 to-black mr-3 text-white font-semibold tracking-wider uppercase border border-gray-700 shadow-[inset_0_-2px_6px_rgba(0,0,0,0.7),_0_2px_8px_rgba(255,255,255,0.1)] hover:shadow-[0_0_15px_2px_rgba(0,100,200,0.5)] hover:border-blue-500 transition-all duration-300 ease-in-out">Сортиране от А до Я</button>
-                  <button id="desc-btn" onclick="sortTeams('desc')" class="px-8 py-4 rounded-full bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white font-semibold tracking-wider uppercase border border-gray-700 shadow-[inset_0_-2px_6px_rgba(0,0,0,0.7),_0_2px_8px_rgba(255,255,255,0.1)] hover:shadow-[0_0_15px_2px_rgba(0,100,200,0.5)] hover:border-blue-500 transition-all duration-300 ease-in-out">Сортиране от Я до А</button>
+                  <button id="asc-btn" onclick="sortTeamsByName('asc')" class="px-8 py-4 rounded-full bg-gradient-to-br from-gray-900 via-gray-800 to-black mr-3 text-white font-semibold tracking-wider uppercase border border-gray-700 shadow-[inset_0_-2px_6px_rgba(0,0,0,0.7),_0_2px_8px_rgba(255,255,255,0.1)] hover:shadow-[0_0_15px_2px_rgba(0,100,200,0.5)] hover:border-blue-500 transition-all duration-300 ease-in-out">Sort by team name A-Z</button>
+                  <button id="desc-btn" onclick="sortTeamsByName('desc')" class="px-8 py-4 rounded-full bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white font-semibold tracking-wider uppercase border border-gray-700 shadow-[inset_0_-2px_6px_rgba(0,0,0,0.7),_0_2px_8px_rgba(255,255,255,0.1)] hover:shadow-[0_0_15px_2px_rgba(0,100,200,0.5)] hover:border-blue-500 transition-all duration-300 ease-in-out">Sort by team name Z-A</button>
+                  <button id="sort-by-comp-btn" onclick="sortTeamsByDomesticCompetition()" class="px-8 py-4 rounded-full bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white font-semibold tracking-wider uppercase border border-gray-700 shadow-[inset_0_-2px_6px_rgba(0,0,0,0.7),_0_2px_8px_rgba(255,255,255,0.1)] hover:shadow-[0_0_15px_2px_rgba(0,100,200,0.5)] hover:border-blue-500 transition-all duration-300 ease-in-out">Sort by domestic competition</button>
                </div>
                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8" id="teams-container">
                   <xsl:apply-templates select="fb:teams/fb:team" />
@@ -130,7 +145,7 @@
             </xsl:attribute>
          </img>
          <div>
-            <p class="text-sm font-medium text-white">
+            <p class="text-sm font-medium text-white comp-name">
                <xsl:value-of select="$competition/fb:name" />
             </p>
             <p class="text-xs text-gray-400">
