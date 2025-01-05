@@ -1301,11 +1301,6 @@
          <country>Europe</country>
          <logo src="conference-league-logo" />
       </competition>
-      <competition id="serie-a">
-         <name>Serie A</name>
-         <country>Italy</country>
-         <logo src="serie-a-logo" />
-      </competition>
       <competition id="bundesliga">
          <name>Bundesliga</name>
          <country>Germany</country>
