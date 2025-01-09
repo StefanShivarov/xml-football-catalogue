@@ -1,0 +1,54 @@
+<!ELEMENT catalogue (teams, competitions)>
+<!ATTLIST catalogue
+   xmlns CDATA #REQUIRED
+   xmlns:xsi CDATA #REQUIRED
+   xsi:schemaLocation CDATA #REQUIRED
+>
+
+<!ELEMENT teams (team+)>
+<!ELEMENT team (name, country, city, stadium, founded, competitionRefs, players, coach, logo)>
+<!ATTLIST team id ID #REQUIRED>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT stadium (#PCDATA)>
+<!ELEMENT founded (#PCDATA)>
+<!ELEMENT competitionRefs (competitionRef+)>
+<!ELEMENT competitionRef EMPTY>
+<!ATTLIST competitionRef ref IDREF #REQUIRED>
+
+<!ELEMENT players (player+)>
+<!ELEMENT player (name, age, nationality, positions, stats?, image?)>
+<!ATTLIST player
+   id ID #REQUIRED
+   team IDREF #REQUIRED
+>
+
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT nationality (#PCDATA)>
+<!ELEMENT positions (position+)>
+<!ELEMENT position (#PCDATA)>
+<!ELEMENT stats (matchesPlayed, goals, assists, yellowCards, redCards, cleanSheets)>
+<!ELEMENT matchesPlayed (#PCDATA)>
+<!ELEMENT goals (#PCDATA)>
+<!ELEMENT assists (#PCDATA)>
+<!ELEMENT yellowCards (#PCDATA)>
+<!ELEMENT redCards (#PCDATA)>
+<!ELEMENT cleanSheets (#PCDATA)>
+
+<!ELEMENT image EMPTY>
+<!ATTLIST image src CDATA #REQUIRED>
+
+<!ELEMENT coach (name, age, nationality, image)>
+<!ATTLIST coach
+   id ID #REQUIRED
+   team IDREF #REQUIRED
+>
+
+<!ELEMENT logo EMPTY>
+<!ATTLIST logo src CDATA #REQUIRED>
+
+<!ELEMENT competitions (competition+)>
+<!ELEMENT competition (name, country, logo)>
+<!ATTLIST competition id ID #REQUIRED>

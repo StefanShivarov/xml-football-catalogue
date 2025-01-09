@@ -60,7 +60,7 @@
             <xs:element name="city" type="xs:string" />
             <xs:element name="stadium" type="xs:string" />
             <xs:element name="founded" type="yearType" />
-            <xs:element name="competitions" type="teamCompetitionsType" />
+            <xs:element name="competitionRefs" type="teamCompetitionsType" />
             <xs:element name="players" type="playersType" />
             <xs:element name="coach" type="coachType" />
             <xs:element name="logo" type="imageType" minOccurs="0" />
@@ -76,7 +76,7 @@
 
     <xs:complexType name="teamCompetitionsType">
         <xs:sequence>
-            <xs:element name="competition" maxOccurs="unbounded">
+            <xs:element name="competitionRef" maxOccurs="unbounded">
                 <xs:complexType>
                     <xs:attribute name="ref" type="xs:IDREF" use="required" />
                 </xs:complexType>
