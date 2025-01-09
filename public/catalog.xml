@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="catalog.xsl"?>
-<!DOCTYPE catalogue [
+<!DOCTYPE catalogue SYSTEM "catalog.dtd" [
    <!NOTATION png PUBLIC "image/png">
    <!NOTATION jpg PUBLIC "image/jpeg">
    
@@ -148,10 +148,10 @@
          <city>Manchester</city>
          <stadium>Old Trafford</stadium>
          <founded>1878</founded>
-         <competitions>
-            <competition ref="premier-league" />
-            <competition ref="europa-league" />
-         </competitions>
+         <competitionRefs>
+            <competitionRef ref="premier-league" />
+            <competitionRef ref="europa-league" />
+         </competitionRefs>
          <players>
             <player id="andre-onana" team="man-utd">
                <name>Andre Onana</name>
@@ -276,10 +276,10 @@
          <city>Manchester</city>
          <stadium>Etihad Stadium</stadium>
          <founded>1880</founded>
-         <competitions>
-            <competition ref="premier-league" />
-            <competition ref="champions-league" />
-         </competitions>
+         <competitionRefs>
+            <competitionRef ref="premier-league" />
+            <competitionRef ref="champions-league" />
+         </competitionRefs>
          <players>
             <player id="ederson" team="man-city">
                <name>Ederson</name>
@@ -400,10 +400,10 @@
          <city>Barcelona</city>
          <stadium>Camp Nou</stadium>
          <founded>1899</founded>
-         <competitions>
-            <competition ref="la-liga" />
-            <competition ref="champions-league" />
-         </competitions>
+         <competitionRefs>
+            <competitionRef ref="la-liga" />
+            <competitionRef ref="champions-league" />
+         </competitionRefs>
          <players>
             <player id="inaki-pena" team="barcelona">
                <name>Iñaki Peña</name>
@@ -531,10 +531,10 @@
          <city>London</city>
          <stadium>Stamford Bridge</stadium>
          <founded>1905</founded>
-         <competitions>
-            <competition ref="premier-league" />
-            <competition ref="conference-league" />
-         </competitions>
+         <competitionRefs>
+            <competitionRef ref="premier-league" />
+            <competitionRef ref="conference-league" />
+         </competitionRefs>
          <players>
             <player id="sanchez" team="chelsea">
                <name>Robert Sanchez</name>
@@ -663,10 +663,10 @@
          <city>Madrid</city>
          <stadium>Santiago Bernabeu</stadium>
          <founded>1902</founded>
-         <competitions>
-            <competition ref="la-liga" />
-            <competition ref="champions-league" />
-         </competitions>
+         <competitionRefs>
+            <competitionRef ref="la-liga" />
+            <competitionRef ref="champions-league" />
+         </competitionRefs>
          <players>
             <player id="courtois" team="real-madrid">
                <name>Thibaut Courtois</name>
@@ -807,10 +807,10 @@
          <city>Munich</city>
          <stadium>Allianz Arena</stadium>
          <founded>1900</founded>
-         <competitions>
-            <competition ref="bundesliga" />
-            <competition ref="champions-league" />
-         </competitions>
+         <competitionRefs>
+            <competitionRef ref="bundesliga" />
+            <competitionRef ref="champions-league" />
+         </competitionRefs>
          <players>
             <player id="neuer" team="bayern-munich">
                <name>Manuel Neuer</name>
@@ -962,10 +962,10 @@
          <city>Liverpool</city>
          <stadium>Anfield</stadium>
          <founded>1892</founded>
-         <competitions>
-            <competition ref="premier-league" />
-            <competition ref="champions-league" />
-         </competitions>
+         <competitionRefs>
+            <competitionRef ref="premier-league" />
+            <competitionRef ref="champions-league" />
+         </competitionRefs>
          <players>
             <player id="alisson" team="liverpool">
                <name>Alisson Becker</name>
@@ -1123,10 +1123,10 @@
          <city>London</city>
          <stadium>Emirates Stadium</stadium>
          <founded>1886</founded>
-         <competitions>
-            <competition ref="premier-league" />
-            <competition ref="champions-league" />
-         </competitions>
+         <competitionRefs>
+            <competitionRef ref="premier-league" />
+            <competitionRef ref="champions-league" />
+         </competitionRefs>
          <players>
             <player id="raya" team="arsenal">
                <name>David Raya</name>

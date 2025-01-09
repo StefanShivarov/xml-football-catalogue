@@ -122,7 +122,7 @@
          <div class="mb-4">
             <h3 class="text-lg font-semibold text-blue-400 mb-2">Competitions</h3>
             <div class="flex flex-wrap gap-3">
-               <xsl:apply-templates select="fb:competitions/fb:competition" />
+               <xsl:apply-templates select="fb:competitionRefs/fb:competitionRef" />
             </div>
          </div>
          <div class="mb-4">
@@ -134,7 +134,7 @@
       </div>
    </xsl:template>
 
-   <xsl:template match="fb:competition">
+   <xsl:template match="fb:competitionRef">
       <xsl:variable name="competitionID" select="@ref" />
       <xsl:variable name="competition" select="/fb:catalogue/fb:competitions/fb:competition[@id=$competitionID]" />
       <div class="flex items-center gap-2 bg-gray-700 px-3 py-2 rounded-lg shadow-sm">
